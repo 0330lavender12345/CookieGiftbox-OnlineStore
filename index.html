@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/menu1.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/marquee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <!--選單-->
+        <div class="lefts">
+            <div class="menucontain">
+                <div class="menubtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="side-bar">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+            
+                    <div class="menu">
+                        <div class="menulist"><a href="#">Home</a></div>
+                        <div class="menulist">
+                            <a class="subbtn">Product<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="submenu">
+                                <a href="#" class="sublist">郭元益</a>
+                                <a href="#" class="sublist">六月初一</a>
+                                <a href="#" class="sublist">Rivon</a>
+                            </div>
+                        </div>
+                                    
+                        <div class="menulist"><a href="#">About us</a></div>
+                        <div class="menulist"><a href="#">Questions</a></li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.subbtn').click(function(){
+                $(this).next('.submenu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            $('.menubtn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menubtn').css("visibility", "hidden");
+            });
+
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menubtn').css("visibility", "visible");
+            });
+        });
+
+        </script>
+
+
+
+        <!--login-->
+        <div class="rights">
+            <div class="headerright">
+                <button class="loginbtn">Login</button>
+            </div>       
+
+            <div class="logincontainer">
+                <span class="closeicon">
+                    <img src="assets/image/close .png">
+                </span>
+                <div class="formbox login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/mail.png"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/padlock.png"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-signup">
+                            <p>Don't have an account?
+                            <a href="#" class="signlink">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="formbox sign">
+                    <h2>Sign up</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <img src="assets/image/user.png">
+                            </span>
+                            <input type="text" required>
+                            <label>Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/mail.png"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/padlock.png"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">I agree to the terms</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-signup">
+                            <p>Already have an account?
+                            <a href="#" class="loginlink">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="assets/js/login.js"></script>
+ 
+    <main>      
+        <marquee direction="scroll">
+            🧧2024過年禮盒首選🥮&nbsp;&nbsp;&nbsp;限時優惠❗❗&nbsp;&nbsp;即日起至2024/3/2 🍪❤️ &nbsp;下單即享優惠~ &nbsp;🔥要買要快喔🔥
+        </marquee>
+        <!--動態廣告-->
+        <div class="slidercontain">
+            <div class="slides">
+                <input type="radio" name="radios" id="radio1">
+                <input type="radio" name="radios" id="radio2">
+                <input type="radio" name="radios" id="radio3">
+                <input type="radio" name="radios" id="radio4">
+                <input type="radio" name="radios" id="radio5">
+
+                <div class="slide one">
+                    <img src="assets/image/image2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/image/first.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/image/image3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/image/image4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/image/image5.jpg" alt="">
+                </div>
+
+                <div class="navigation">
+                    <div class="auto1"></div>
+                    <div class="auto2"></div>
+                    <div class="auto3"></div>
+                    <div class="auto4"></div>
+                    <div class="auto5"></div>
+                </div>
+            </div>
+            <div class="navigationmanu">
+                <label for="radio1" class="m1"></label>
+                <label for="radio2" class="m1"></label>
+                <label for="radio3" class="m1"></label>
+                <label for="radio4" class="m1"></label>
+                <label for="radio5" class="m1"></label>
+            </div>
+        </div>
+        <div class="js-connector" data-js="final.js"></div>
+        <script type="text/javascript">
+            window.onload=function(){
+                var counter=1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 5){
+                        counter = 1;
+                    }
+                }, 4000);
+
+            };
+        </script>
+
+        <!--top-->
+        <div class="top">
+            
+
+        </div>
+
+
+    </main>
+</body>
+</html>

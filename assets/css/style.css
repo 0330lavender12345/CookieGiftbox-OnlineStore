@@ -1,0 +1,170 @@
+body {
+    /*position: relative;*/
+    background-color: #EDE0D4;
+    /*width: 100%;
+    overflow-x: hidden;*/
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    /*display: fixed;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #b2a496;
+    width: 100%;
+    z-index: 1600;
+    height: 75px;
+}
+
+.menucontain {
+    position: relative;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.lefts {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.rights {
+    margin-right: 20px;
+}
+
+/*輪播圖*/
+.slidercontain {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    transition: 2s;
+    white-space: nowrap;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    height: 100%;
+    transition: 2s;
+    transition: 2s;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+
+.m1 {
+    border: 2px solid #B08968;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.m1:not(:last-child) {
+    margin-right: 40px;
+}
+
+.m1:hover {
+    background: #B08968;
+}
+
+#radio1:checked~.one {
+    margin-left: 0;
+}
+
+#radio2:checked~.one {
+    margin-left: -20%;
+}
+
+#radio3:checked~.one {
+    margin-left: -40%;
+}
+
+#radio4:checked~.one {
+    margin-left: -60%;
+}
+
+#radio5:checked~.one {
+    margin-left: -80%;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation div {
+    border: 2px solid #B08968;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigationmanu {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation .auto1 {
+    background: #B08968;
+}
+
+#radio2:checked~.navigation .auto2 {
+    background: #B08968;
+}
+
+#radio3:checked~.navigation .auto3 {
+    background: #B08968;
+}
+
+#radio4:checked~.navigation .auto4 {
+    background: #B08968;
+}
+
+#radio5:checked~.navigation .auto5 {
+    background: #B08968;
+}
+
+/*top*/
+.top {
+    background-color: #ab947e;
+    width: 1500px;
+    height: 500px;
+    margin-top: 70px;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 6px;
+    align-items: center;
+}
