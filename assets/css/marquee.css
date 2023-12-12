@@ -1,0 +1,12 @@
+marquee {
+    width: 100%;
+    padding: 30px 0;
+    color: #a4161a;
+    -webkit-text-stroke-width: 0.5px;
+    font-size: 30px;
+    white-space: nowrap;
+    position: absolute;
+    top: 40px;
+    letter-spacing: 2.5px;
+
+}
