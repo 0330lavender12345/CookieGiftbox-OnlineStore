@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    background-color: #003049;
+    padding: 5px;
+    color: white;
+}
+
+/*
+.mainplace {
+    display: flex;
+}
+*/
+
+.title {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    align-items: flex-start;
+
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.number {
+    text-align: center;
+}
+
+.quantitycontrol {
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    */
+    position: relative;
+    right: -50%;
+    margin-bottom: 20px;
+
+}
+
+.quantity-btn {
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #003049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #003049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.quantitytext {
+    text-align: center;
+}
+
+.shoppingbasket {
+    text-align: right;
+}
+
+hr {
+    border-width: 4px;
+    width: 100%;
+}
+
+
+.snoopy1 {
+    width: 400px;
+    position: relative;
+    right: -13%;
+    align-items: flex-start;
+
+}
+
+
+.text {
+    text-align: center;
+}
+
+
+.rating {
+    display: inline-block;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.rating[data-rating="1"] .star:nth-child(-n+1),
+.rating[data-rating="2"] .star:nth-child(-n+2),
+.rating[data-rating="3"] .star:nth-child(-n+3),
+.rating[data-rating="4"] .star:nth-child(-n+4),
+.rating[data-rating="5"] .star:nth-child(-n+5) {
+    color: #f8d30b;
+    /* 已評分的星星顏色 */
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #003049;
+    padding: 5px;
+}

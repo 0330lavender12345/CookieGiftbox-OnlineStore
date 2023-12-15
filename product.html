@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>website</h1>
+    </header>
+    <main>
+        <div class="mainplace">
+            <div class="title"><h1>【SNOOPY聯名】友你相伴-8結肉酥酥禮盒</h1></div>
+            <div class="title"><h2>NT:575</h2></div>
+            <img class="snoopy1" src="image/SNOOPY1.jpg" alt="商品圖片">
+            <!--
+                <span>
+                <input class="number" type="text" value="1" size="5" maxlength="5">
+            </span>
+            !-->
+            <div class="quantitycontrol">
+                <span class="quantity-btn" onclick="decreaseQuantity()">-</span>
+                <input class="quantitytext" type="text" id="quantity" value="1" readonly>
+                <span class="quantity-btn" onclick="increaseQuantity()">+</span>
+                <button onclick="addToCart()">加入購物車</button>
+            </div>
+        </div>
+        <!--
+        <input class="shoppingbasket" type="submit" value="加入購物車">
+        -->
+        <hr>
+        <!--
+        <img class="snoopy2" src="image/SNOOPY2.jpg" alt="商品圖片">
+        <img class="snoopy2" src="image/SNOOPY3.jpg" alt="商品圖片">
+        !-->
+        <!--<div class="purchasenumber">
+            <div class="number">
+            <i class="minus"></i>
+            </div>
+        !-->
+        </div>
+    </main>
+    <div class="text">
+        <p>※內含32入蛋捲一盒+肉酥酥提盒一盒(口味皆可任選)</p>
+        <p>※蛋捲為蛋奶素可食</p>
+        <p>※本產品含有大豆、蛋、麩質、堅果種子不適合其過敏體質者食用</p>
+    </div>
+    <hr>
+    <div>
+        <div class="rating1">
+            
+        </div>
+        <div class="rating" data-rating="0">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+    
+    </div>
+    <footer class="copyright"><h3>Copyright</h3></footer>
+    <script src="js/product.js"></script>
+</body>
+</html>
