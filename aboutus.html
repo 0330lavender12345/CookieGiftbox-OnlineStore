@@ -141,16 +141,26 @@
     <!--About us-->
     <main>
         <h1 data-text="Aboutus">About us</h1>
-        <section>
-            <div class="container">
+        <section id="aboutsectiob">
+            <div class="container" id="blur">
                 <div class="row">
                     <div class="about">
                         <div class="introduce">
-                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div>
+                            <a href="#" >
+                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div></a>
                             <div class="contentbx">
                                 <p>蔡佳昀<br><span>Lavender</span></p>
-                            </div>
+                            </div>    
+                            
+                           
                         </div>
+                        <div class="card-body">
+                            <h1 class="card-title">嗨</h1>
+                            <p class="card-sub">我的心得</p>
+                            <p class="card-info">所以這裡開始我的心得</p>
+                            <button class="card-btn">點擊</button>
+                        </div>
+                        
 
                         <ul class="back">
                             <li style="--i:1">
@@ -165,7 +175,8 @@
                 
                     <div class="about">
                         <div class="introduce">
-                            <div class="imgbox"><img src="assets/image/L7.jpg"></div>
+                            <a href="#">
+                            <div class="imgbox"><img src="assets/image/L7.jpg"></div></a>
                             <div class="contentbx">
                                 <p>陳立奇<br><span>Stanley</span></p>
                             </div>
@@ -184,7 +195,8 @@
                     </div>
                     <div class="about">
                         <div class="introduce">
-                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div>
+                            <a href="#">
+                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div></a>
                             <div class="contentbx">
                                 <p>林芷辰<br><span>Lavender</span></p>
                             </div>
@@ -206,7 +218,8 @@
                 <div class="row">
                     <div class="about">
                         <div class="introduce">
-                            <div class="imgbox"><img src="assets/image/hahaha.jpg"></div>
+                            <a href="#">
+                            <div class="imgbox"><img src="assets/image/hahaha.jpg"></div></a>
                             <div class="contentbx">
                                 <p>莊孔禎<br><span>Food</span></p>
                             </div>
@@ -225,7 +238,8 @@
                     </div>
                     <div class="about">
                         <div class="introduce">
-                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div>
+                            <a href="#">
+                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div></a>
                             <div class="contentbx">
                                 <p>蔡佳昀<br><span>Lavender</span></p>
                             </div>
@@ -244,7 +258,8 @@
                     </div>
                     <div class="about">
                         <div class="introduce">
-                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div>
+                            <a href="#">
+                            <div class="imgbox"><img src="assets/image/lavender.jpg"></div></a>
                             <div class="contentbx">
                                 <p>蔡佳昀<br><span>Lavender</span></p>
                             </div>
@@ -261,10 +276,28 @@
                         </ul>
                         
                     </div>
-                </div>
-                
+                </div>               
             </div>
+            
+          
+            <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const container = document.querySelector('.container');
+            
+                container.addEventListener('click', function(event) {
+                    const cardBody = event.target.closest('.about').querySelector('.card-body');
+                    if (cardBody) {
+                        cardBody.classList.toggle('paused');
+                    }
+                });
+            });
+            </script>
+            
+  
+            
         </section>
+        
+        
     </main>
 </body>
 </html>

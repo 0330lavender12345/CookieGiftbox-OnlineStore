@@ -74,6 +74,7 @@ section {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+    overflow: hidden;
 }
 
 .container {
@@ -159,6 +160,11 @@ section {
     left: 91px;
 }
 
+.about:hover .card-body {
+    right: 0;
+
+}
+
 .container .about .back li {
     list-style: none;
     margin: 0 10px;
@@ -176,4 +182,90 @@ section {
 .container .about .back li a {
     color: #fff;
     font-size: 24px;
+}
+
+.card-body {
+    width: 83%;
+    height: 87%;
+    top: 0;
+    right: -103%;
+    position: absolute;
+    background: #003049;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 10s;
+    z-index: 100;
+    transition: transform 1s ease;
+    animation: example-animation 10s ease-in-out infinite;
+
+}
+
+
+
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn {
+    color: #003049;
+    background-color: #E0E1DD;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@keyframes example-animation {
+    0% {
+        /* 起始位置 */
+        right: -103%;
+    }
+
+    100% {
+        /* 結束位置 */
+        right: 0;
+    }
+}
+
+
+
+/*.card-body.paused {
+    animation-play-state: paused;
+}*/
+.card-body.paused {
+    right: 0;
+    animation-play-state: paused;
+    /* 當移除 'paused' 類別時，將卡片移至可見位置 */
+}
+
+.card-body.play-animation {
+    right: 0;
+    /* 當添加 'play-animation' 類別時，將卡片移至可見位置 */
+    animation: example-animation 10s ease-in-out forwards;
+    /* 開始動畫 */
 }
