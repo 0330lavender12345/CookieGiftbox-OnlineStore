@@ -68,6 +68,44 @@
 
         </script>
 
+        <div class="user-modal">
+            <div class="profile-btn">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="card-body">
+                <div class="procontain" id="procontain">
+                    <div class="inner">
+                        <p class="pp">Profile</p>
+                        <div class="profile2">
+                            <div class="profile1">
+                                <label class="form-label">User Name</label>
+                                <input type="text" class="form-control " value="nmaxwell">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" value="Nelle Maxwell">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Mail</label>
+                                <input type="text" class="form-control " value="nmaxwell@mail.com">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Gender</label>
+                                <input type="text" class="form-control" value="Male/Female">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Phone Num</label>
+                                <input type="text" class="form-control" value="0937829178">
+                            </div>
+                        </div>
+                        <button id="closemodal">Save Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/user.js"></script>
+
 
 
         <!--login-->
@@ -154,7 +192,7 @@
                             
                            
                         </div>
-                        <div class="card-body">
+                        <div class="card-body1">
                             <h1 class="card-title">嗨</h1>
                             <p class="card-sub">我的心得</p>
                             <p class="card-info">所以這裡開始我的心得</p>
@@ -285,7 +323,7 @@
                 const container = document.querySelector('.container');
             
                 container.addEventListener('click', function(event) {
-                    const cardBody = event.target.closest('.about').querySelector('.card-body');
+                    const cardBody = event.target.closest('.about').querySelector('.card-body1');
                     if (cardBody) {
                         cardBody.classList.toggle('paused');
                     }
