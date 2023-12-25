@@ -66,6 +66,7 @@ section {
 }
 
 .about {
+
     width: 90px;
     height: 400px;
     background: rgba(255, 255, 255, 0.1);
@@ -85,6 +86,225 @@ section {
     margin-top: -17px;
     right: 150px;
     display: block;
+    z-index: 100;
 }
 
+
 /*header結束*/
+
+/*profile部分選單*/
+.member {
+    background-color: #E0E1DD;
+    top: -110px;
+}
+
+.memnav {
+    position: relative;
+    background: #34495e;
+    font-size: 0;
+    margin: 270px auto 0;
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.memnav a {
+    position: relative;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    margin-right: 60px;
+    top: -2px;
+    left: 65px;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+}
+
+.memnav .memberani {
+    position: absolute;
+    border-radius: 5px;
+    background: #b2a496;
+    height: 100%;
+    top: 0;
+    transition: all .7s ease 0s;
+    z-index: 0;
+
+}
+
+.memnav a:nth-child(1) {
+    width: 120px;
+}
+
+.memnav .start-home,
+a:nth-child(1):hover~.memberani {
+    width: 120px;
+    left: 65px;
+}
+
+.memnav a:nth-child(2) {
+    width: 140px;
+}
+
+.memnav a:nth-child(2):hover~.memberani {
+    width: 140px;
+    left: 243px;
+}
+
+.memnav a:nth-child(3) {
+    width: 205px;
+}
+
+.memnav a:nth-child(3):hover~.memberani {
+    width: 205px;
+    left: 443px;
+}
+
+/*profile、editProfile、purchaseRecords動畫*/
+
+@keyframes slideIn {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 360px;
+    }
+}
+
+#pprofile,
+#editProfile,
+#purchaseRecords {
+    background-color: white;
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    left: -1000px;
+    border-radius: 15px;
+    top: 350px;
+
+}
+
+#pprofile:target,
+#editProfile:target,
+#purchaseRecords:target {
+    animation: slideIn 0.5s forwards;
+}
+
+/*profile內容*/
+.ptitle {
+    position: relative;
+    font-size: 50px;
+    color: #003049;
+    left: 10px;
+    bottom: 250px;
+    padding-bottom: 30px;
+    white-space: nowrap;
+
+}
+
+.selfie {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.selfie img {
+    position: absolute;
+    border-radius: 50%;
+    width: 210px;
+
+
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr;*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 15px;
+    margin-top: 150px;
+    margin-left: 110px;
+    align-items: start;
+    justify-items: start;
+}
+
+.form-control {
+    width: 125px;
+
+}
+
+
+.profile1 {
+    color: #003049;
+    font-size: 20px;
+    /* padding: 10px;*/
+    white-space: nowrap;
+}
+
+.accountname {
+    position: absolute;
+    font-size: 25px;
+    left: 60px;
+    margin-top: 130px;
+    color: #003049;
+}
+
+.information1 {
+    position: absolute;
+    font-size: 16px;
+    left: 55px;
+    margin-top: 260px;
+    color: #34495e;
+    white-space: nowrap;
+}
+
+/*edit profile*/
+.profile-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr;*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 15px;
+    margin-top: 110px;
+    margin-left: 30px;
+    align-items: start;
+    justify-items: start;
+}
+
+#closemodal {
+    width: 200px;
+    height: 30px;
+    background-color: #ab947e;
+    color: #f4f3ee;
+    border-style: none;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid #f4f3ee;
+    margin: 20px auto;
+    display: block;
+    position: absolute;
+    left: 430px;
+    top: 380px;
+}
+
+#closemodal:hover {
+    background-color: #f4f3ee;
+    color: #ab947e;
+}
+
+/*購物紀錄*/
+.ptitle1 {
+    position: relative;
+    font-size: 50px;
+    color: #003049;
+    left: -210px;
+    bottom: 250px;
+    padding-bottom: 30px;
+    white-space: nowrap;
+}

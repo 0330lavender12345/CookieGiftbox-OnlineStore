@@ -146,10 +146,145 @@
     </header>
     <script src="assets/js/login.js"></script>
 
+ <!--  
     <section class="member">
+        <div class="memcon">
+            <nav class="memnav">
+                <div class="proocon">
+                    <a href="#" >Profile</a>
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Purchase Records</a> 
+                    <div class="memberani start-home"></div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="pprofile" id="pprofile">
+        <p>嗨</p>
+    </section>--> 
+    
+    <!--<script src="assets/js/profile.js"></script>-->
+    <section class="member">
+        <div class="memcon">
+            <nav class="memnav">
+                <div class="proocon">
+                    <a href="#pprofile" >Profile</a>
+                    <a href="#editProfile">Edit Profile</a>
+                    <a href="#purchaseRecords">Purchase Records</a> 
+                    <div class="memberani start-home"></div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="pprofile" id="pprofile">
+        <p class="ptitle">Profile &nbsp;|</p>
+
+        <div class="selfie">
+            <img src="assets/image/selfie.jpg">
+        </div>
+        <div class="accountname">
+            <p>User:Tomato</p>
+        </div>
+        <div class="information1">
+            <p>*右方為您的個人資訊</p>
+        </div>
+        <div class="profile-grid">
+            <div class="profile1">
+                <label class="form-label">Mail</label>
+                <input type="text" class="form-control" value="ttomato@mail.com" readonly>
+            </div>
+            <div class="profile1">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" value="*******" readonly>
+            </div>
+            <div class="profile1">
+                <label class="form-label">User Name</label>
+                <input type="text" class="form-control" value="tomato" readonly>
+            </div>
+            <div class="profile1">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" value="Tomato Sauce" readonly>
+            </div>
+
+            <div class="profile1">
+                <label class="form-label">Gender</label>
+                <select class="form-control" id="genderselect" disabled>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="profile1">
+                <label class="form-label">Phone Num</label>
+                <input type="text" class="form-control" value="0937829178" readonly>
+            </div>
+        </div>
         
     </section>
 
+    <section class="pprofile" id="editProfile">
+        <p class="ptitle">Edit Profile &nbsp;|</p>
+        <div class="selfie">
+            <img src="assets/image/selfie.jpg">
+        </div>
+        <div class="accountname">
+            <p>User:Tomato</p>
+        </div>
+        <div class="information1">
+            <p>*右方修改您的個人資訊</p>
+        </div>
+
+        <div class="profile-grid1">
+            <div class="profile1">
+                <label class="form-label">Mail</label>
+                <input type="text" class="form-control" value="ttomato@mail.com" >
+            </div>
+            <div class="profile1">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" value="**********" >
+            </div>
+            <div class="profile1">
+                <label class="form-label">User Name</label>
+                <input type="text" class="form-control" value="tomato">
+            </div>
+            <div class="profile1">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" value="Tomato Sauce" >
+            </div>
+
+            <div class="profile1">
+                <label class="form-label">Gender</label>
+                <select class="form-control" id="genderselect" >
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="profile1">
+                <label class="form-label">Phone Num</label>
+                <input type="text" class="form-control" value="0937829178" >
+            </div>
+            <button id="closemodal">Save Profile</button>
     </section>
+   
+
+    <section class="pprofile" id="purchaseRecords">
+        <p class="ptitle1"> Purchase Records&nbsp;|</p>
+        <div class="selfie">
+            <img src="assets/image/selfie.jpg">
+        </div>
+        <div class="accountname">
+            <p>User:Tomato</p>
+        </div>
+        <div class="information1">
+            <p>*右方為您的購物紀錄</p>
+        </div>
+    </section>
+    
+  
+    
 </body>
+
 </html>
