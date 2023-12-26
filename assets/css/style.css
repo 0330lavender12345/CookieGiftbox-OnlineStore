@@ -422,7 +422,7 @@ ul li a:hover::before {
 
 .giftimg img {
     /* 其他樣式 */
-    transition: transform 1.5s ease;
+    transition: transform 2s ease;
     transform: translateX(100%);
     /* 其他樣式 */
 }
