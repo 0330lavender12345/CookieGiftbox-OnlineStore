@@ -14,21 +14,128 @@ header {
     color: white;
 }
 
-/*
+.shoppingcart {
+    width: 20%;
+}
+
+#cartContainer {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* 初始位置在屏幕右侧之外 */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    /* 添加过渡效果 */
+    z-index: 1;
+}
+
+#cart {
+    padding: 20px;
+}
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+#closeCartBtn {
+    background-color: #003049;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#closeCartBtn:hover {
+    background-color: #001c30;
+}
+
+#openCartBtn {
+    background-color: #003049;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#openCartBtn:hover {
+    background-color: #001c30;
+}
+
 .mainplace {
     display: flex;
+    justify-content: space-around;
 }
-*/
+
+.leftplace {
+    margin: 50px 0px 50px 200px;
+}
+
+.LR-button {
+    position: relative;
+    display: inline-block;
+}
+
+#sliderImage {
+    width: 77%;
+    margin-bottom: 10px;
+}
+
+.button1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 48, 73, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+#leftbutton {
+    left: 5px;
+}
+
+#rightbutton {
+    left: 360px;
+}
+
+.otherphoto {
+    justify-content: center;
+    width: 90%;
+}
+
+.thumbnail {
+    width: 10%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.rightplace {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 160px 0px 0px;
+    left: 700px;
+}
 
 .title {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    align-items: flex-start;
-
     font-weight: bold;
-    font-size: larger;
+    font-size: 35px;
+}
 
+.titletext {
+    font-size: 18px;
+}
+
+.price {
+    margin-bottom: 10px;
 }
 
 .number {
@@ -36,19 +143,12 @@ header {
 }
 
 .quantitycontrol {
-    /*
     display: flex;
     align-items: center;
-    justify-content: center;
-    */
-    position: relative;
-    right: -50%;
-    margin-bottom: 20px;
-
 }
 
-.quantity-btn {
-    font-size: 18px;
+.quantitybutton {
+    font-size: 20px;
     padding: 5px 10px;
     cursor: pointer;
     background-color: #003049;
@@ -58,46 +158,84 @@ header {
     margin: 0 5px;
 }
 
-button {
+.quantitytext {
+    text-align: center;
+    height: 23px;
+    margin: 0 5px;
+}
+
+.stocktext {
     font-size: 18px;
+}
+
+.button2 {
+    font-size: 20px;
     padding: 5px 10px;
     cursor: pointer;
     background-color: #003049;
     color: white;
     border: none;
     border-radius: 5px;
+    position: absolute;
+    right: 120px;
+    top: 393px;
 }
 
-.quantitytext {
-    text-align: center;
-}
-
-.shoppingbasket {
-    text-align: right;
-}
-
-hr {
+.hr1 {
     border-width: 4px;
     width: 100%;
 }
-
-
-.snoopy1 {
-    width: 400px;
-    position: relative;
-    right: -13%;
-    align-items: flex-start;
-
-}
-
 
 .text {
     text-align: center;
 }
 
+.comment {
+    background-color: #E0E1DD;
+    padding: 45px;
+    margin: 50px 170px 50px 170px;
+    border-radius: 10px;
+}
+
+.commenttitle {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #003049;
+}
+
+.hr2 {
+    border-top: 2px dashed #003049;
+}
+
+.oc-name {
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.oc-rating {
+    color: #f8d30b;
+    margin-left: 20px;
+}
+
+.oc-text {
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.newcomment {
+    display: flex;
+    justify-content: center;
+}
+
+.commenttext {
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .rating {
     display: inline-block;
+    margin: 10px;
 }
 
 .star {
@@ -111,12 +249,69 @@ hr {
 .rating[data-rating="4"] .star:nth-child(-n+4),
 .rating[data-rating="5"] .star:nth-child(-n+5) {
     color: #f8d30b;
-    /* 已評分的星星顏色 */
+}
+
+.name {
+    margin: 10px;
+}
+
+#username {
+    border: none;
+    border-bottom: 1.55px solid #003049;
+    background-color: #E0E1DD;
+}
+
+.usercomment {
+    margin: 10px;
+}
+
+textarea {
+    justify-content: center;
+    border: 1.55px solid #003049;
+}
+
+.sendbutton {
+    background-color: #003049;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 footer {
-    text-align: center;
+
     color: white;
     background-color: #003049;
     padding: 5px;
+}
+
+a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.line1 {
+    margin: 30px 25px 10px 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hr3 {
+    width: 1100px;
+}
+
+.line2 {
+    display: inline-block;
+    margin: 7px 20px 7px 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.linkicon {
+    width: 2.7%;
+}
+
+.footertext {
+    text-align: center;
 }

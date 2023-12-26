@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const openCartBtn = document.getElementById('openCartBtn');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const cartContainer = document.getElementById('cartContainer');
+  
+    openCartBtn.addEventListener('click', function () {
+      cartContainer.style.right = '0';
+    });
+  
+    closeCartBtn.addEventListener('click', function () {
+      cartContainer.style.right = '-300px';
+    });
+  });  
+
 let quantity = 1;
 
         function increaseQuantity() {
@@ -64,4 +78,51 @@ let quantity = 1;
             }
         });
 
+        let currentIndex = 0;  // 初始化当前索引
+        const images = ["image/SNOOPY1.jpg", "image/SNOOPY2.jpg", "image/SNOOPY3.jpg"];  // 替换为你的图片路径
+        
+        function changeSlideTo(index) {
+            currentIndex = index;
+            updateSliderImage();
+        }
+        function changeSlide(direction) {
+            currentIndex += direction;
+        
+            // 处理循环切换图片，如果 currentIndex 超出边界
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+        
+            updateSliderImage();
+        }
+        
+        function updateSliderImage() {
+            const sliderImage = document.getElementById("sliderImage");
+            sliderImage.src = images[currentIndex];
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const leftButton = document.getElementById("leftbutton");
+            const rightButton = document.getElementById("rightbutton");
+        
+            leftButton.addEventListener('click', function () {
+                changeSlide(-1);
+            });
+        
+            rightButton.addEventListener('click', function () {
+                changeSlide(1);
+            });
+        });
+        
+        var stockQuantity = 10;
+
+        // 更新库存量显示
+        function updateStock() {
+            document.getElementById('stock').innerText = stockQuantity;
+        }
+
+        // 调用函数，初始化时更新库存量显示
+        updateStock();
         
