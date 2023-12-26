@@ -89,6 +89,59 @@ section {
     z-index: 100;
 }
 
+.search {
+    position: fixed;
+    min-height: 30px;
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    /*left: 100px;*/
+    color: white;
+    margin-top: -95px;
+    margin-right: 100px;
+    right: -75%;
+
+}
+
+.search1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 60px;
+    padding: 1px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search1 input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 5px 1px;
+    font-size: 20px;
+    color: #B08968;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.search1 button {
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #B08968;
+}
+
+.search1 button img {
+    width: 24px;
+}
 
 /*header結束*/
 

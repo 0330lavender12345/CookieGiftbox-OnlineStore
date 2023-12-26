@@ -16,6 +16,7 @@ header {
     width: 100%;
     z-index: 1600;
     height: 75px;
+
 }
 
 .menucontain {
@@ -50,6 +51,13 @@ section {
     background-color: #b2a496;
     width: 100%;
     height: auto;
+    min-height: calc(100vh - 75px);
+    /* 根據需要調整高度 */
+    /*margin-top: 75px;*/
+    /* 固定標頭的高度 */
+    padding-bottom: 50px;
+    /* 若需要額外的底部間距 */
+
 }
 
 .imgbox img {
@@ -197,159 +205,42 @@ section {
     margin-top: -17px;
     right: 150px;
     display: block;
+    z-index: 100;
 }
-
-/*PROFILE
-
-.profile-btn {
-    position: fixed;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    margin-top: -17px;
-    right: 150px;
-    display: block;
-
-
-
-
-}
-
-/*.procontain {
-
-
-    opacity: 0;
-    position: absolute;
-
-    top: 180px;
-    left: 510px;
-
-    bottom: 0;
-    transition: all 0.3 ease-in-out;
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 50px;
-
-
-
-
-
-
-}
-.procontain {
-    opacity: 0;
-    position: absolute;
-    top: 25px;
-    left: 400px;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    align-items: center;
-    justify-content: center;
-    /*margin-top: 100px;
-    margin-left: 50px;*/
-/* visibility: hidden;
-    overflow: hidden;
-}
-
-
-.procontain.open {
-    opacity: 1;
-
-}
-
-.inner {
-    background-color: rgba(171, 148, 126, 1);
-    border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 15px 25px;
-    width: 550px;
-    height: 400px;
-    margin-top: 100px;
-    color: white;
-
-}
-
-
-.pp {
-    font-size: 30px;
-    margin-top: 3px;
-    letter-spacing: 1px;
-    text-align: center;
-
-}
-
-.profile1 {
-    padding-top: 30px;
-}
-
-.profile2 {
-    text-align: center;
-}
-
-
-#closemodal {
-    margin-top: 38px;
-    width: 200px;
-    height: 30px;
-    background-color: #ab947e;
-    color: #f4f3ee;
-    border-style: none;
-    font-size: 16px;
-    border-radius: 15px;
-    border: 1px solid #f4f3ee;
-    margin: 20px auto;
-    display: block;
-
-
-
-
-
-}
-
-#closemodal:hover {
-    background-color: #f4f3ee;
-    color: #ab947e;
-
-
-}
-
-.form-label {
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-left: 20px;
-    text-align: left;
-
-}
-
-.form-control {
-    border: 1px solid #f4f3ee;
-    width: 180px;
-    height: 18px;
-    text-align: left;
-
-}
-
-.form-control ::placeholder {
-    color: #B08968;
-}
-*/
 
 
 /*心得*/
+.feedbody {
+    margin-top: -80px;
+}
+
 .feedback1 {
     position: relative;
     width: 100%;
     height: 370px;
-    overflow: hidden;
+    margin-top: -80px;
+
 }
+
+.front1 {
+    position: absolute;
+    font-size: 35px;
+    color: #003049;
+    top: -10px;
+    font-weight: 500;
+    right: 105px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    /* 調整底線粗細 */
+    text-underline-offset: 6px;
+}
+
 
 .feedback {
     position: absolute;
-    width: 200px;
-    height: 320px;
+    width: 300px;
+    height: 390px;
+    margin-left: -55px;
     text-align: justify;
     background-color: #fff;
     border-radius: 10px;
@@ -357,24 +248,104 @@ section {
     transition: 0.5s;
     left: calc(50% - 110px);
     top: 0;
+
+
 }
 
 #next,
 #prev {
     position: absolute;
     top: 40%;
-    color: #fff;
+    color: #5e503f;
     background-color: transparent;
     border: none;
     font-size: xxx-large;
-    font-family: monospace;
     font-weight: bold;
-    left: 400px;
+    left: 300px;
 
 }
 
 #next {
     left: unset;
-    right: 400px;
+    right: 300px;
 
+}
+
+.feedtitle {
+    color: #003049;
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+.membername {
+    position: absolute;
+    color: #003049;
+    font-size: 25px;
+    font-weight: bold;
+    top: 70px;
+}
+
+.reflection {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    top: 130px;
+    left: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*header搜尋*/
+.search {
+    position: fixed;
+    min-height: 30px;
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    /*left: 100px;*/
+    color: white;
+    margin-top: -93px;
+    margin-right: 100px;
+    right: -75%;
+
+}
+
+.search1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 60px;
+    padding: 1px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search1 input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 5px 1px;
+    font-size: 20px;
+    color: #B08968;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.search1 button {
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #B08968;
+}
+
+.search1 button img {
+    width: 24px;
 }
