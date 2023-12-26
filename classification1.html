@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="classification1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+    <header>
+        <!--選單-->
+        <div class="lefts">
+            <div class="menucontain">
+                <div class="menubtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="side-bar">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+
+                    <div class="menu">
+                        <div class="menulist"><a href="#">Home</a></div>
+                        <div class="menulist">
+                            <a class="subbtn">Product<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="submenu">
+                                <a href="#" class="sublist">郭元益</a>
+                                <a href="#" class="sublist">六月初一</a>
+                                <a href="#" class="sublist">Rivon</a>
+                            </div>
+                        </div>
+
+                        <div class="menulist"><a href="#">About us</a></div>
+                        <div class="menulist"><a href="#">Questions</a></li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.subbtn').click(function(){
+                $(this).next('.submenu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            $('.menubtn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menubtn').css("visibility", "hidden");
+            });
+
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menubtn').css("visibility", "visible");
+            });
+        });
+
+        </script>
+        <div class="user-modal">
+            <div class="profile-btn">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="card-body">
+                <div class="procontain" id="procontain">
+                    <div class="inner">
+                        <p class="pp">Profile</p>
+                        <div class="profile2">
+                            <div class="profile1">
+                                <label class="form-label">User Name</label>
+                                <input type="text" class="form-control " value="nmaxwell">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" value="Nelle Maxwell">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Mail</label>
+                                <input type="text" class="form-control " value="nmaxwell@mail.com">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Gender</label>
+                                <input type="text" class="form-control" value="Male/Female">
+                            </div>
+                            <div class="profile1">
+                                <label class="form-label">Phone Num</label>
+                                <input type="text" class="form-control" value="0937829178">
+                            </div>
+                        </div>
+                        <button id="closemodal">Save Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="user.js"></script>
+
+
+
+        <!--login-->
+        <div class="rights">
+            <div class="headerright">
+                <button class="loginbtn">Login</button>
+            </div>       
+
+            <div class="logincontainer">
+                <span class="closeicon">
+                    <img src="image/close .png">
+                </span>
+                <div class="formbox login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><img src="image/mail.png"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="image/padlock.png"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-signup">
+                            <p>Don't have an account?
+                            <a href="#" class="signlink">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="formbox sign">
+                    <h2>Sign up</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <img src="image/user.png">
+                            </span>
+                            <input type="text" required>
+                            <label>Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="image/mail.png"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="image/padlock.png"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">I agree to the terms</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-signup">
+                            <p>Already have an account?
+                            <a href="#" class="loginlink">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="login.js"></script>
+
+    <main>
+        <div class="slideshow_container">
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title1.jpg"  style="width:100%"/></div>
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title2.jpg " style="width:100%" /></div>
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title3.jpg " style="width:100%" /></div>
+                
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title4.jpg " style="width:100%" /></div>
+                
+              
+            </div>
+            <button class="prev" onclick="plusSlide(-1)"><</button>
+            <button class="next" onclick="plusSlide(-1)">></button>
+        </div>
+        <script>
+            let slideIndex = 1;
+        
+            function showSlides(n) {
+                let slides = document.getElementsByClassName("singleslide");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        
+            function plusSlide(n) {
+                showSlides((slideIndex += n));
+            }
+        
+            // Automatic slideshow
+            function autoSlide() {
+                plusSlide(1);
+                setTimeout(autoSlide, 2000); // Change slide every 2 seconds
+            }
+        
+            // Start automatic slideshow
+            autoSlide();
+        </script>
+
+         </script>
+
+        <!--<div class="video1">-->
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/Zg9DQZPB2Hg?rel=0&hd=1&autoplay=1&loop=1&playlist=Zg9DQZPB2Hg&mute=1' allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            <!--<iframe width="850" height="455" src="https://www.youtube.com/embed/Zg9DQZPB2Hg?si=fyDxyhDuX5gtOKey" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen muted></iframe>-->
+            
+        </div>
+
+        <div>
+            <h2>products</h2>
+        </div>
+
+        <div class="array">
+            <div class="item">
+                <div class="item_img">
+                    <img src="image/little prince.jpg" alt=""></img>
+                </div>
+
+                <div class="item_text">
+                    <p>【小王子聯名】閃耀星空8結提盒</p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$300</p>
+
+                </div>
+
+            </div>
+        
+
+        
+            <div class="item">
+                <div class="item_img">
+                    <img src="image/snoopy.jpg" alt=""></img>
+                </div>
+
+                <div class="item_text">
+                    <p>【SNOOPY聯名】友你相伴-8結肉酥酥禮盒</p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$575</p>
+
+                </div>
+
+            </div>
+        
+            <div class="item">
+                <div class="item_img">
+                    <img src="image/one mouth.jpg"></img>
+                </div>
+
+                <div class="item_text">
+                    <p>剛好一口酥禮盒
+                    </p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$320</p>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>@123456</footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+header {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #003049;
+    position: sticky;
+    padding: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1000;
+
+}
+
+.headertitle {
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: sticky;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    background-color: #B08968;
+    height: 300px;
+    width: 15%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: 100;
+
+}
+
+#menu_switcher:checked~.menu {
+    transform: translateX(0%);
+
+}
+
+#menu_switcher {
+    display: none;
+}
+
+.menu li a {
+    padding: 20px;
+    color: #b2a496;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 30px;
+    /*border-bottom: 3px solid #ffffff;*/
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #E0E1DD;
+    margin: 0;
+}
+
+
+h2 {
+    height: 50px;
+    width: auto;
+    color: #172b54;
+    padding: 5px;
+    margin: 30px 180px;
+    display: grid;
+    width: 70%;
+    margin-left: 230px;
+    font-size: 50px;
+    text-align: center;
+    animation: floatAnimation 1s infinite alternate;
+
+
+}
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0);
+        /* 開始時的位置 */
+    }
+
+    to {
+        transform: translateY(-10px);
+        /* 結束時的位置，這裡可以調整負值的大小以改變漂浮效果 */
+    }
+}
+
+.hamburger {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    left: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger_line {
+    width: 40px;
+    height: 3px;
+    background-color: #b2a496;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 10px 0px #b2a496, 0px -10px 0px#b2a496;
+}
+
+.logo {
+    display: none;
+}
+
+.qanda {
+    background-color: #8DA9C4;
+    width: 70%;
+    height: 800px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+.ques {
+    width: 70%;
+    font-size: 36px;
+    /*margin-left: 40px;*/
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ans {
+    width: 70%;
+    font-size: 20px;
+    /*margin-left: 80px;*/
+    margin-top: 20px;
+    /* padding: 5px;*/
+    text-align: center;
+
+}
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: #003049;
+    text-align: center;
+    color: white;
+
+}

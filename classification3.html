@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="classification3.css">
+</head>
+<body>
+    <header>
+       
+        
+            
+        <h1>
+            <div class="headertitle">伱</div>
+        </h1>
+            
+            <input type="checkbox"  name="menu_switcher" id="menu_switcher" />
+            <label for="menu_switcher"  class="hamburger">
+                <div class="hamburger_line">
+                </div>
+                <h1 class="logo">
+                    <a href="#">menu</a>
+                  </h1>
+            </label>
+            
+        
+        
+        <ul class="menu">
+            <li><a href="">全部商品</a></li>
+            <li><a href="">郭元益</a></li>
+            <li><a href="">禮坊</a></li>
+            <li><a href="">六月初一</a></li>
+            <li><a href="">關於我們</a></li>
+        </ul>
+        
+    </header>
+
+    <main>
+        <div class="slideshow_container">
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title1.jpg"  style="width:100%"/></div>
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title2.jpeg" style="width:100%" /></div>
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title3.jpg" style="width:100%" /></div>
+                
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="image/title4.jpg" style="width:100%" /></div>
+                
+              
+            </div>
+            <button class="prev" onclick="plusSlide(-1)"><</button>
+            <button class="next" onclick="plusSlide(-1)">></button>
+        </div>
+        <script>
+            let slideIndex = 1;
+        
+            function showSlides(n) {
+                let slides = document.getElementsByClassName("singleslide");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        
+            function plusSlide(n) {
+                showSlides((slideIndex += n));
+            }
+        
+            // Automatic slideshow
+            function autoSlide() {
+                plusSlide(1);
+                setTimeout(autoSlide, 2000); // Change slide every 2 seconds
+            }
+        
+            // Start automatic slideshow
+            autoSlide();
+        </script>
+
+         </script>
+
+        <div class="video1">
+            <iframe width="850" height="455" src="https://www.youtube.com/embed/-J_-CBoAiNA?si=qi8uT6ue-SBSZj-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </div>
+
+        <div>
+            <h2>products</h2>
+        </div>
+
+        <div class="array">
+            <div class="item">
+                <div class="item_img">
+                    <img src="image/roll.jpeg" alt=""></img>
+                </div>
+
+                <div class="item_text">
+                    <p>【Rivon禮坊】法式奶油雪茄捲20入(黑森林摩卡)</p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$550</p>
+
+                </div>
+
+            </div>
+        
+
+        
+            <div class="item">
+                <div class="item_img">
+                    <img src="image/lovebox.png" alt=""></img>
+                </div>
+
+                <div class="item_text">
+                    <p>【Rivon禮坊】華獻珍愛</p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$1580</p>
+
+                </div>
+
+            </div>
+        
+            <div class="item">
+                <div class="item_img">
+                    <img src="image/teabox.png" alt=""></img>
+                </div>
+
+                <div class="item_text">
+                    <p>【2024禮坊春節】欣欣向龍午茶禮盒（大）
+                    </p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$493</p>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>@123456</footer>
+</body>
+</html>
