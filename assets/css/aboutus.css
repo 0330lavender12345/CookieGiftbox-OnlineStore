@@ -305,7 +305,7 @@ section {
     /*left: 100px;*/
     color: white;
     margin-top: -93px;
-    margin-right: 100px;
+    margin-right: 156px;
     right: -75%;
 
 }
@@ -348,4 +348,31 @@ section {
 
 .search1 button img {
     width: 24px;
+}
+
+/*header nii*/
+.nii {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+.ni {
+    color: #B08968;
+    font-size: 30px;
+    border: 2px;
+    position: absolute;
+    left: 50px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.ni2 {
+    color: #B08968;
+    font-size: 40px;
+    border: 2px;
+    position: absolute;
+    left: 100px;
+    top: -7px;
+    font-weight: 550;
+    font-family: 'Italianno', cursive;
 }
