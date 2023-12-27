@@ -4,6 +4,7 @@ body {
     /*width: 100%;
     overflow-x: hidden;*/
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -18,12 +19,31 @@ header {
     height: 75px;
 }
 
+.nii {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
 .ni {
     color: #B08968;
     font-size: 30px;
     border: 2px;
     position: absolute;
     left: 50px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.ni2 {
+    color: #B08968;
+    font-size: 40px;
+    border: 2px;
+    position: absolute;
+    left: 100px;
+    top: -7px;
+    font-weight: 550;
+    font-family: 'Italianno', cursive;
+
 }
 
 .menucontain {
@@ -200,7 +220,7 @@ header {
 
 }
 
-.item_img img {
+.item_img1 img {
     padding: 10px 10px;
     width: 200px;
     /*margin: 10px;*/
@@ -212,7 +232,24 @@ header {
 
 }
 
-.item_img img:hover {
+.item_img1 img:hover {
+    transform: translateY(-15px);
+}
+
+.item_img2 img {
+    padding: 10px 10px;
+    width: 240px;
+    /*margin: 10px;*/
+    margin-left: 14px;
+    margin-top: -5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+}
+
+.item_img2 img:hover {
     transform: translateY(-15px);
 }
 
@@ -224,16 +261,46 @@ header {
     margin: 10px 5px;
 }
 
-.item_text {
+.item_text1 {
     cursor: pointer;
+    font-size: 18px;
+    color: #003049;
+    font-weight: 700;
+    font-family: 'Noto Serif TC', serif;
+
 }
 
-.item_price {
+.item_text2 {
+    position: absolute;
+    cursor: pointer;
+    margin-top: -9px;
+    margin-left: 110px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #003049;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.item_price1 {
     text-align: left;
     padding: 10px;
-    top: 80px;
+    /*top: -35x;*/
     bottom: 10px;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.item_price2 {
+    text-align: left;
+    padding: 10px;
+    /* top: 10px;*/
+    /*bottom: 80px;*/
+    font-size: 17px;
+    margin-top: 48px;
+    margin-left: 48px;
+    font-weight: 600;
+
+
 }
 
 ul {
@@ -335,15 +402,7 @@ ul li a:hover::before {
 }
 
 /*search*/
-/*.search-btn {
-    position: fixed;
-    color: white;
-    font-size: 26px; 
-    cursor: pointer;
-    margin-top: -17px;
-    right: 220px;
-    display: block;
-}*/
+
 .search {
     position: fixed;
     min-height: 30px;
@@ -433,10 +492,11 @@ ul li a:hover::before {
 }
 
 .intro {
-    font-size: 30px;
+    font-size: 28px;
     color: #B08968;
     margin-left: 450px;
     margin-top: 20px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .english {
@@ -464,6 +524,9 @@ ul li a:hover::before {
     left: 1300px;
     font-size: 30px;
     top: 220px;
+    font-weight: 700;
+    font-family: 'Italianno', cursive;
+
 }
 
 .word2 {
