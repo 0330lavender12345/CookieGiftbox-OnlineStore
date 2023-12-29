@@ -5,12 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/menu1.css">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/marquee.css">
-    
+    <link rel="stylesheet" href="assets/css/classification1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
@@ -18,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Great+Vibes&family=Italianno&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+    
+
 
 </head>
 <body>
@@ -90,7 +87,6 @@
             <form action="" class="search1">
                 <input type="text" placeholder="search for..." name="que">
                 <button type="submit"><img src="assets/image/search.png"></button>
-
             </form>
         </div>
 
@@ -164,142 +160,130 @@
         </div>
     </header>
     <script src="assets/js/login.js"></script>
- 
-    <main>  
-        <!--跑馬燈-->    
-        <marquee direction="scroll">
-            🧧2024過年禮盒首選🥮&nbsp;&nbsp;&nbsp;限時優惠❗❗&nbsp;&nbsp;即日起至2024/3/2 🍪❤️ &nbsp;下單即享優惠~ &nbsp;🔥要買要快喔🔥
-        </marquee>
-        <!--動態廣告-->
-        <div class="slidercontain">
-            <div class="slides">
-                <input type="radio" name="radios" id="radio1">
-                <input type="radio" name="radios" id="radio2">
-                <input type="radio" name="radios" id="radio3">
-                <input type="radio" name="radios" id="radio4">
-                <input type="radio" name="radios" id="radio5">
 
-                <div class="slide one">
-                    <a href="#"><img src="assets/image/image2.jpg" alt=""></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="assets/image/first.jpg" alt=""></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="assets/image/image3.png" alt=""></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="assets/image/image4.png" alt=""></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="assets/image/image5.jpg" alt=""></a>
-                </div>
-
-                <div class="navigation">
-                    <div class="auto1"></div>
-                    <div class="auto2"></div>
-                    <div class="auto3"></div>
-                    <div class="auto4"></div>
-                    <div class="auto5"></div>
-                </div>
+    
+    <main>
+        <div class="slideshow_container">
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="assets/image/title1.jpg"  style="width:100%"/></div>
+              
             </div>
-            <div class="navigationmanu">
-                <label for="radio1" class="m1"></label>
-                <label for="radio2" class="m1"></label>
-                <label for="radio3" class="m1"></label>
-                <label for="radio4" class="m1"></label>
-                <label for="radio5" class="m1"></label>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="assets/image/title2.jpg " style="width:100%" /></div>
+              
             </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="assets/image/title3.jpg " style="width:100%" /></div>
+                
+              
+            </div>
+            <div class="singleslide fades">
+                
+                <div class="slide_img"><img src="assets/image/title4.jpg " style="width:100%" /></div>
+                
+              
+            </div>
+            <button class="prev1" onclick="plusSlide(-1)"><</button>
+            <button class="next1" onclick="plusSlide(-1)">></button>
         </div>
-
-        <script type="text/javascript">
-            window.onload=function(){
-                var counter=1;
-                setInterval(function(){
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if(counter > 5){
-                        counter = 1;
-                    }
-                }, 4000);
-
-            };
+        <script>
+            let slideIndex = 1;
+        
+            function showSlides(n) {
+                let slides = document.getElementsByClassName("singleslide");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        
+            function plusSlide(n) {
+                showSlides((slideIndex += n));
+            }
+        
+            // Automatic slideshow
+            function autoSlide() {
+                plusSlide(1);
+                setTimeout(autoSlide, 2000); // Change slide every 2 seconds
+            }
+        
+            // Start automatic slideshow
+            autoSlide();
         </script>
 
-    <!--yt影片-->
-    <div class='embed-container'>
-        <iframe src='https://www.youtube.com/embed/zVmCB1ftZik?rel=0&hd=1&autoplay=1&loop=1&playlist=zVmCB1ftZik&mute=1' allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+       
 
+        <!--<div class="video1">-->
+        <div class='embed-container1'><iframe src='https://www.youtube.com/embed/Zg9DQZPB2Hg?rel=0&hd=1&autoplay=1&loop=1&playlist=Zg9DQZPB2Hg&mute=1' allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <!--<iframe width="850" height="455" src="https://www.youtube.com/embed/Zg9DQZPB2Hg?si=fyDxyhDuX5gtOKey" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen muted></iframe>-->
+            
+        </div>
 
-    <!--top-->
-    <div class="top">
-        <ul>
-            <li style="--clr:#003049">
-                <a href="#" data-text="&nbsp;SHOP OUR BESTSELLERS">&nbsp;SHOP OUR BESTSELLERS&nbsp;</a>
-            </li>
-        </ul>
-        <div class="topper">
-            <div class="top1">
-                <p class="no">🥇No.1</p>
-                <div class="item_img2">
-                    <img src="assets/image/no1.png" alt=""></img>
+        <div>
+            <h2 class="producth2">Products</h2>
+        </div>
+
+        <div class="array">
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/image/little prince.jpg" alt=""></img>
                 </div>
 
-                <div class="item_text2">
-                    <p>華獻珍愛</p>
-
-                </div>
-                <div class="item_price2">
-                    <p>NT$1580</p>
-                </div>
-            </div>
-
-            <div class="top2">
-                <p class="no">🥈No.2</p>
-                <div class="item_img1">
-                    <img src="assets/image/no2.jpg" alt=""></img>
-                </div>
-
-                <div class="item_text1">
-                    <p>【郭元益】美好時光奶酥餅乾</p>
-
-                </div>
-                <div class="item_price1">
-                    <p>NT$460</p>
-                </div>
-            </div>
-
-            <div class="top3">
-                <p class="no">🥉No.3</p>
-                <div class="item_img1">
-                    <img src="assets/image/prince.jpg" alt=""></img>
-                </div>
-
-                <div class="item_text1">
+                <div class="item_text">
                     <p>【小王子聯名】閃耀星空8結提盒</p>
 
                 </div>
-                <div class="item_price1">
+                <div class="item_price">
                     <p>NT$300</p>
+
                 </div>
+
+            </div>
+        
+
+        
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/image/snoopy.jpg" alt=""></img>
+                </div>
+
+                <div class="item_text">
+                    <p>【SNOOPY聯名】友你相伴-8結肉酥酥禮盒</p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$575</p>
+
+                </div>
+
+            </div>
+        
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/image/one mouth.jpg"></img>
+                </div>
+
+                <div class="item_text">
+                    <p>剛好一口酥禮盒
+                    </p>
+
+                </div>
+                <div class="item_price">
+                    <p>NT$320</p>
+
+                </div>
+
             </div>
         </div>
-    </div>
-
-    <div class="giftimg">
-        <img src="assets/image/gift.png" class="hidden1">
-    </div>
-    <script src="assets/js/gift.js"></script>
-
-    <div class="word2">
-        <p class="intro visible">集結三品牌的購物網站，滿足您送禮的小小心意</p>
-        <p class="english visible">"Everytime you come to mind, I realize I'm smiling."</p>
-        <p class="by">By</p>
-        <p class="you visible">Ni&nbsp;.</p>
-        
-    </div>
-    
     </main>
     <footer >
         <div class="line1">

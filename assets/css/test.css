@@ -1,0 +1,473 @@
+/*header*/
+header {
+    position: fixed;
+    /*display: fixed;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #003049;
+    width: 100%;
+    z-index: 1600;
+    height: 75px;
+}
+
+.menucontain {
+    position: relative;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.lefts {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.rights {
+    margin-right: 20px;
+}
+
+h1 {
+    color: #003049;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    -webkit-text-stroke: 0.05vw white;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2a496;
+    width: 100%;
+    height: auto;
+}
+
+.imgbox img {
+    width: 170px;
+    height: 160px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about {
+
+    width: 90px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-btn {
+    position: fixed;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    margin-top: -17px;
+    right: 150px;
+    display: block;
+    z-index: 100;
+}
+
+.search {
+    position: fixed;
+    min-height: 30px;
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    /*left: 100px;*/
+    color: white;
+    margin-top: -95px;
+    margin-right: 156px;
+    right: -75%;
+
+}
+
+.search1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 60px;
+    padding: 1px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search1 input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 5px 1px;
+    font-size: 20px;
+    color: #B08968;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.search1 button {
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #B08968;
+}
+
+.search1 button img {
+    width: 24px;
+}
+
+.nii {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+.ni {
+    color: #B08968;
+    font-size: 30px;
+    border: 2px;
+    position: absolute;
+    left: 50px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.ni2 {
+    color: #B08968;
+    font-size: 40px;
+    border: 2px;
+    position: absolute;
+    left: 100px;
+    top: -7px;
+    font-weight: 550;
+    font-family: 'Italianno', cursive;
+}
+
+
+/*header結束*/
+
+/*menu1*/
+/*總選單*/
+.side-bar {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    width: 300px;
+    height: 120vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .menulist {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .menulist a {
+    color: #b6ad90;
+    background: transparent;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.side-bar .menu .menulist a:hover {
+    background: #003049;
+    transition: 0.25 ease;
+    transform: scale(1.1);
+
+
+}
+
+.side-bar .menu .menulist i {
+    margin-right: 15px;
+
+}
+
+
+.side-bar .menu .menulist a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+
+.side-bar .menu .menulist .submenu {
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.side-bar .menu .menulist .submenu a {
+    padding-left: 80px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.active {
+    left: 0;
+
+}
+
+.close-btn {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menubtn {
+    position: absolute;
+    /*position: relative;*/
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -11px;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+/*login*/
+/*login按鈕*/
+.loginbtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.8rem;
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid #f4f3ee;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    right: 20px
+}
+
+.loginbtn:hover {
+    background-color: #f4f3ee;
+    color: #ab947e;
+}
+
+.logincontainer {
+    position: absolute;
+    height: 440px;
+    width: 400px;
+    /*background: transparent;*/
+    background: rgba(255, 255, 255, 0.32);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1500;
+    margin-top: 5%;
+    margin-left: 38%;
+
+}
+
+.logincontainer.active {
+    height: 520px;
+}
+
+.logincontainer.active-pop {
+    transform: scale(1);
+}
+
+.formbox .login {
+    width: 100%;
+    padding: 40px;
+}
+
+.formbox h2 {
+    font-size: 2em;
+    color: #5e503f;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #5e503f;
+    margin: 30px 0;
+
+}
+
+.icon img {
+    width: 15px;
+    height: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    transform: translateY(-50%);
+    color: #5e503f;
+    pointer-events: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #5e503f;
+    font-size: 1.2em;
+    padding: 0 35px 0 5px;
+    font-weight: 600;
+}
+
+.input-box .icon {
+    position: absolute;
+    font-size: 1.2em;
+    right: 8px;
+    line-height: 56px;
+    color: #5e503f;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #5e503f;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #5e503f;
+    margin-right: 3px;
+}
+
+.btn {
+    height: 42px;
+    width: 100%;
+    background: #a9927d;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+.login-signup {
+    color: #5e503f;
+    font-size: .94em;
+    margin: 23px 0 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.login-signup p a {
+    text-decoration: none;
+    font-weight: 580;
+    color: #5e503f;
+}
+
+.login-signup p a:hover {
+    text-decoration: underline;
+}
+
+.logincontainer .closeicon {
+    background: #5e503f;
+    border-bottom-left-radius: 18px;
+    top: 0;
+    right: 0;
+    width: 43px;
+    height: 43px;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.closeicon img {
+    width: 20px;
+    height: 20px;
+}
+
+.logincontainer .formbox.login {
+    transform: translateX(0);
+    transition: transform .18s ease;
+}
+
+.logincontainer.active .formbox.login {
+    transition: none;
+    transform: translateX(-350px);
+}
+
+.logincontainer .formbox.sign {
+    position: absolute;
+    transition: none;
+    transform: translateX(350px);
+}
+
+.logincontainer.active .formbox.sign {
+    transform: translateX(0);
+    transition: transform .18s ease;
+}

@@ -23,6 +23,7 @@ header {
     position: absolute;
     margin-left: 10px;
     margin-top: -15px;
+    z-index: 300;
 }
 
 .ni {
@@ -369,7 +370,7 @@ ul li a:hover::before {
     color: #003049;
     font-size: 40px;
     justify-content: center;
-    margin-left: 35px;
+    margin-left: 40px;
     display: inline-block;
     position: relative;
     padding-bottom: 0.25rem;
@@ -395,7 +396,7 @@ ul li a:hover::before {
     color: white;
     font-size: 28px;
     cursor: pointer;
-    margin-top: -17px;
+    margin-top: -35px;
     right: 150px;
     display: block;
     z-index: 100;
@@ -411,7 +412,7 @@ ul li a:hover::before {
     display: flex;
     /*left: 100px;*/
     color: white;
-    margin-top: -95px;
+    margin-top: -131px;
     margin-right: 156px;
     right: -75%;
 
@@ -527,10 +528,52 @@ ul li a:hover::before {
     font-weight: 700;
     font-family: 'Italianno', cursive;
 
+
 }
 
 .word2 {
     margin-top: 90px;
     position: relative;
 
+}
+
+/*footer*/
+footer {
+
+    color: white;
+    background-color: #003049;
+    padding: 5px;
+    margin-top: 200px;
+}
+
+a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.line1 {
+    margin: 30px 25px 10px 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hr3 {
+    width: 1100px;
+}
+
+.line2 {
+    display: inline-block;
+    margin: 7px 20px 7px 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.linkicon {
+    width: 2.7%;
+}
+
+.footertext {
+    text-align: center;
 }
