@@ -70,7 +70,12 @@ body {
     margin: 0;
 }
 
-.video1 {
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+
+    width: 850px;
+    height: 455px;
     margin: 100px 180px;
     display: grid;
     width: 70%;
@@ -81,6 +86,8 @@ body {
     margin-bottom: 60px;
 
 }
+
+
 
 h2 {
     background-color: #003049;
@@ -145,11 +152,6 @@ h2 {
 .slideshow_container {
     margin: auto;
     max-width: 100%;
-    /*position: relative;*/
-}
-
-.singleslide {
-    /*display: flex;*/
 }
 
 .prev {

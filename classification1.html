@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <a target="_blank" href="https://icons8.com/icon/132/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Great+Vibes&family=Italianno&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>-->
 
 </head>
 <body>
     <header>
+        <a href="index.html"><div class="nii">
+            <p class="ni">伱&nbsp;|</p>
+            <p class="ni2">Ni</p>
+        </div></a>
         <!--選單-->
         <div class="lefts">
             <div class="menucontain">
@@ -24,19 +35,20 @@
                         <i class="fas fa-times"></i>
                     </div>
 
-
+            
                     <div class="menu">
-                        <div class="menulist"><a href="#">Home</a></div>
+                        <div class="menulist"><a href="index.html">Home</a></div>
                         <div class="menulist">
                             <a class="subbtn">Product<i class="fas fa-angle-right dropdown"></i></a>
                             <div class="submenu">
+                                <a href="#" class="sublist">All Products</a>
                                 <a href="#" class="sublist">郭元益</a>
                                 <a href="#" class="sublist">六月初一</a>
                                 <a href="#" class="sublist">Rivon</a>
                             </div>
                         </div>
-
-                        <div class="menulist"><a href="#">About us</a></div>
+                                    
+                        <div class="menulist"><a href="aboutus.html">About us</a></div>
                         <div class="menulist"><a href="#">Questions</a></li>
                     </div>
                 </div>
@@ -60,46 +72,24 @@
                 $('.side-bar').removeClass('active');
                 $('.menubtn').css("visibility", "visible");
             });
-        });
+        });                                 
 
         </script>
+
         <div class="user-modal">
-            <div class="profile-btn">
-                <i class="fas fa-user"></i>
-            </div>
-            <div class="card-body">
-                <div class="procontain" id="procontain">
-                    <div class="inner">
-                        <p class="pp">Profile</p>
-                        <div class="profile2">
-                            <div class="profile1">
-                                <label class="form-label">User Name</label>
-                                <input type="text" class="form-control " value="nmaxwell">
-                            </div>
-                            <div class="profile1">
-                                <label class="form-label">Name</label>
-                                <input type="text" class="form-control" value="Nelle Maxwell">
-                            </div>
-                            <div class="profile1">
-                                <label class="form-label">Mail</label>
-                                <input type="text" class="form-control " value="nmaxwell@mail.com">
-                            </div>
-                            <div class="profile1">
-                                <label class="form-label">Gender</label>
-                                <input type="text" class="form-control" value="Male/Female">
-                            </div>
-                            <div class="profile1">
-                                <label class="form-label">Phone Num</label>
-                                <input type="text" class="form-control" value="0937829178">
-                            </div>
-                        </div>
-                        <button id="closemodal">Save Profile</button>
-                    </div>
+            <a href="data.html">
+                <div class="profile-btn">
+                    <i class="fas fa-user"></i>
                 </div>
-            </div>
+            </a>
         </div>
 
-        <script src="user.js"></script>
+        <div class="search">
+            <form action="" class="search1">
+                <input type="text" placeholder="search for..." name="que">
+                <button type="submit"><img src="assets/image/search.png"></button>
+            </form>
+        </div>
 
 
 
@@ -239,7 +229,7 @@
         </div>
 
         <div>
-            <h2>products</h2>
+            <h2>Products</h2>
         </div>
 
         <div class="array">
@@ -295,6 +285,29 @@
             </div>
         </div>
     </main>
-    <footer>@123456</footer>
+    <footer >
+        <div class="line1">
+            <a href="">首頁</a>
+            <a href="">About us</a>
+            <a href="">會員登入/註冊</a>
+            <a href="">常見問題</a>
+        </div>
+        <hr class="hr3">
+        <div class="line2">
+            <a href="">郭元益</a>
+            <a href="https://shop.kuos.com/" target="_blank"><img class="linkicon" src="image/linkicon.png" alt="link"></a>
+            <a href="">六月初一</a>
+            <a href="https://www.june1.com.tw/" target="_blank"><img class="linkicon" src="image/linkicon.png" alt="link"></a>
+            <a href="">禮坊</a>
+            <a href="https://www.rivon.com.tw/" target="_blank"><img class="linkicon" src="image/linkicon.png" alt="link"></a>
+        </div>
+        <hr class="hr3">
+        <br>
+        <div class="footertext">瀏覽人數： </div>
+        <div class="footertext">MON-FRI 8:00-17:00</div>
+        <div class="footertext">EST.2023|伱NI</div>
+        <div class="footertext">Copyright@伱</div>  
+        <div class="footertext">地址:桃園市中壢區新中北路200號</div>
+    </footer>
 </body>
 </html>
