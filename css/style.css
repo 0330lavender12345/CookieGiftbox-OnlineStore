@@ -7,29 +7,24 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    text-align: center;
-    background-color: #003049;
-    padding: 5px;
-    color: white;
-}
-
-.shoppingcart {
-    width: 20%;
-}
-
+/*
 #cartContainer {
     position: fixed;
     top: 0;
     right: -300px;
     /* 初始位置在屏幕右侧之外 */
-    width: 300px;
+/*    width: 300px;
     height: 100%;
     background-color: #fff;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
-    /* 添加过渡效果 */
+    添加过渡效果 */
+/*
     z-index: 1;
+    height: 100vh;
+    視窗高度的100% 
+    overflow-y: scroll;
+    啟用垂直滾動條 
 }
 
 #cart {
@@ -52,19 +47,7 @@ header {
 #closeCartBtn:hover {
     background-color: #001c30;
 }
-
-#openCartBtn {
-    background-color: #003049;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#openCartBtn:hover {
-    background-color: #001c30;
-}
-
+*/
 .mainplace {
     display: flex;
     justify-content: space-around;
@@ -102,7 +85,7 @@ header {
 }
 
 #rightbutton {
-    left: 360px;
+    left: 372px;
 }
 
 .otherphoto {
@@ -177,7 +160,7 @@ header {
     border: none;
     border-radius: 5px;
     position: absolute;
-    right: 120px;
+    right: 40px;
     top: 393px;
 }
 
@@ -284,7 +267,7 @@ footer {
     padding: 5px;
 }
 
-a {
+.footer1 {
     color: white;
     text-align: left;
     text-decoration: none;
