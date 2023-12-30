@@ -3,9 +3,16 @@ main {
     top: 110px;
 }
 
+.shoppingcart-title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #003049;
+}
+
 .cart-item {
     background-color: #E0E1DD;
-    margin: 10px 150px 10px 150px;
+    margin: 10px 195px 10px 195px;
     border-radius: 5px;
     padding: 30px;
     display: flex;
@@ -15,11 +22,12 @@ main {
 .cartitemtext {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .cartitemtext img {
-    width: 200px;
-    margin: 10px 150px 10px 10px;
+    width: 170px;
+    margin: 10px 100px 10px 10px;
 }
 
 .cartitemquantity {
@@ -28,8 +36,8 @@ main {
 }
 
 .quantitybutton2 {
-    background-color: white;
-    color: black;
+    background-color: #003049;
+    color: white;
     border-radius: 3px;
     margin: 0 5px;
     padding: 0 5px;
@@ -38,4 +46,37 @@ main {
 
 .quantitytext2 {
     text-align: center;
+}
+
+
+
+.cart-item1 {
+    background-color: #E0E1DD;
+    margin: 10px 195px 10px 195px;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+.totalprice1 {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.totalpricetext {
+    display: inline;
+}
+
+.totalprice {
+    text-align: center;
+
+}
+
+.checkout {
+    margin-left: 680px;
+    background-color: #003049;
+    color: white;
+    border-radius: 7px;
+    font-size: 20px;
 }

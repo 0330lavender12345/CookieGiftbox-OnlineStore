@@ -171,6 +171,7 @@
     <script src="js/login.js"></script>
 
     <main>
+        <div class="shoppingcart-title">-----SHOPPING CART-----</div>
         <div class="cart-item">
             <div class="cartitemtext">
                 <img src="image/SNOOPY1.jpg" alt="SNOOPY1">
@@ -182,10 +183,10 @@
                     <input class="quantitytext2" type="text" id="quantity1" size="7" value="1" readonly>
                     <span class="quantitybutton2" onclick="increaseQuantity(1)">+</span><br>
                 </div>
-                <h5>$ <span id="total1">575</span> </h5>
+                <h5>$ <span id="total1">575</span> </h5><br>
+                
             </div>
         </div>
-        <br>
         <div class="cart-item">
             <div class="cartitemtext">
                 <img src="image/pineapple1.jpg" alt="pineapple1">
@@ -197,9 +198,22 @@
                     <input class="quantitytext2" type="text" id="quantity2" size="7" value="1" readonly>
                     <span class="quantitybutton2" onclick="increaseQuantity(2)">+</span><br>
                 </div>
-                <h5>$ <span id="total2">320</span> </h5>
+                <h5>$ <span id="total2">320</span> </h5><br>
+                
             </div>
         </div>
+        <div class="cart-item1">
+            <div class="totalprice1">
+                <h5 class="totalpricetext">Total：&nbsp&nbsp&nbsp&nbsp</h5>
+                <div class="totalprice">
+                    <h5>$<span id="total-price">895</span></h5>
+                </div>
+            </div>
+            <div class="checkoutbtn">
+                <button type="button" class="checkout">Check Out</button>
+            </div>
+        </div>
+        
     </main>
     <script src="js/shoppingcart.js"></script>
 </body>
