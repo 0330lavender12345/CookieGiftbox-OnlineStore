@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.mainplace {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+
+.leftplace {
+    margin: 50px 0px 50px 350px;
+}
+
+.LR-button {
+    position: relative;
+    display: inline-block;
+}
+
+#sliderImage {
+    width: 77%;
+    margin-bottom: 10px;
+}
+
+.button1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 48, 73, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+#leftbutton {
+    left: 5px;
+}
+
+#rightbutton {
+    left: 372px;
+}
+
+.otherphoto {
+    justify-content: center;
+    width: 90%;
+}
+
+.thumbnail {
+    width: 10%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.rightplace {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 160px 0px 0px;
+    left: 800px;
+    top: 90px;
+}
+
+.titlecookie {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.titletext {
+    font-size: 18px;
+}
+
+.pricecookie {
+    margin-bottom: 10px;
+}
+
+.number {
+    text-align: center;
+}
+
+.quantitycontrol {
+    display: flex;
+    align-items: center;
+}
+
+.quantitybutton {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #003049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.quantitytext {
+    text-align: center;
+    height: 23px;
+    margin: 0 5px;
+}
+
+.stocktext {
+    font-size: 18px;
+}
+
+.button2 {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #003049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    top: 393px;
+}
+
+.hr1 {
+    border-width: 4px;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+}
+
+.comment {
+    background-color: #E0E1DD;
+    padding: 45px;
+    margin: 50px 170px 50px 170px;
+    border-radius: 10px;
+}
+
+.commenttitle {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #003049;
+}
+
+.hr2 {
+    border-top: 2px dashed #003049;
+}
+
+.oc-name {
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.oc-rating {
+    color: #f8d30b;
+    margin-left: 20px;
+}
+
+.oc-text {
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.newcomment {
+    display: flex;
+    justify-content: center;
+}
+
+.commenttext {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rating {
+    display: inline-block;
+    margin: 10px;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.rating[data-rating="1"] .star:nth-child(-n+1),
+.rating[data-rating="2"] .star:nth-child(-n+2),
+.rating[data-rating="3"] .star:nth-child(-n+3),
+.rating[data-rating="4"] .star:nth-child(-n+4),
+.rating[data-rating="5"] .star:nth-child(-n+5) {
+    color: #f8d30b;
+}
+
+.name {
+    margin: 10px;
+}
+
+#username {
+    border: none;
+    border-bottom: 1.55px solid #003049;
+    background-color: #E0E1DD;
+}
+
+.usercomment {
+    margin: 10px;
+}
+
+textarea {
+    justify-content: center;
+    border: 1.55px solid #003049;
+}
+
+.sendbutton {
+    background-color: #003049;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}

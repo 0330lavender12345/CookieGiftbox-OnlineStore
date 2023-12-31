@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/classification3.css">
+    <link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="assets/css/headerfooter.css">
-    <link rel="stylesheet" href="assets/css/menu1.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/menu1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
@@ -16,9 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Great+Vibes&family=Italianno&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
+        
         <a href="index.html"><div class="nii">
             <p class="ni">伱&nbsp;|</p>
             <p class="ni2">Ni</p>
@@ -98,7 +100,7 @@
                 <button type="submit"><img src="assets/image/search.png"></button>
             </form>
         </div>
-
+        
 
 
         <!--login-->
@@ -169,130 +171,87 @@
         </div>
     </header>
     <script src="assets/js/login.js"></script>
+
+   
     <main>
-        <div class="slideshow_container">
-            <div class="singleslide fades">
+        <div class="mainplace">
+            <div class="leftplace">
+                <div class="LR-button">
+                    <button class="button1" id="leftbutton" onclick="changeSlide(-1)"><</button>
+                    <img id="sliderImage" src="assets/image/foryou1.jpg" alt="photo1">
+                    <button class="button1" id="rightbutton" onclick="changeSlide(1)">></button>
+                </div>
+                <div class="otherphoto">
+                    <img class="thumbnail" src="assets/image/foryou1.jpg" alt="photo1" onclick="changeSlideTo(0)">
+                    <img class="thumbnail" src="assets/image/foryou2.png" alt="photo2" onclick="changeSlideTo(1)">
+                    <img class="thumbnail" src="assets/image/foryou3.jpg" alt="photo3" onclick="changeSlideTo(2)">
                 
-                <div class="slide_img"><img src="assets/image/title9.jpg"  style="width:100%"/></div>
-              
+                </div>
             </div>
-            <div class="singleslide fades">
+            <div class="rightplace">
+                <div class="titlecookie">
+                    <p>【郭元益XAPUJAN】<br>
+                        FOR YOU系列-經典款</p>
+                </div>
+                <p class="titletext">再度獻上詹朴跨界合作「FOR YOU」<br>
+                    2023全新款：FOR YOU-花<br>
+                    本包裝木盒採用紐西蘭松木
+                </p>
+                <div class="pricecookie"><h2>NT:1490</h2></div>
                 
-                <div class="slide_img"><img src="assets/image/title10.jpeg" style="width:100%" /></div>
-              
-            </div>
-            <div class="singleslide fades">
-                
-                <div class="slide_img"><img src="assets/image/title11.jpeg" style="width:100%" /></div>
-                
-              
-            </div>
-            <div class="singleslide fades">
-                
-                <div class="slide_img"><img src="assets/image/title12.jpg" style="width:100%" /></div>
-                
-              
-            </div>
-            <button class="prev" onclick="plusSlide(-1)"><</button>
-            <button class="next" onclick="plusSlide(-1)">></button>
-        </div>
-        <script>
-            let slideIndex = 1;
-        
-            function showSlides(n) {
-                let slides = document.getElementsByClassName("singleslide");
-                if (n > slides.length) {
-                    slideIndex = 1;
-                }
-                if (n < 1) {
-                    slideIndex = slides.length;
-                }
-                for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex - 1].style.display = "block";
-            }
-        
-            function plusSlide(n) {
-                showSlides((slideIndex += n));
-            }
-        
-            // Automatic slideshow
-            function autoSlide() {
-                plusSlide(1);
-                setTimeout(autoSlide, 2000); // Change slide every 2 seconds
-            }
-        
-            // Start automatic slideshow
-            autoSlide();
-        </script>
-
-         </script>
-
-        <div class="video1">
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/Zg9DQZPB2Hg?rel=0&hd=1&autoplay=1&loop=1&playlist=-J_-CBoAiNA&mute=1' allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-            <!--
-            <iframe width="850" height="455" src="https://www.youtube.com/embed/-J_-CBoAiNA?si=qi8uT6ue-SBSZj-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-            
-        </div>
-
-        <div>
-            <h2 class="producth2">Products</h2>
-        </div>
-
-        <div class="array">
-            <div class="item">
-                <div class="item_img">
-                    <img src="assets/image/roll.jpeg" alt=""></img>
+                <div class="quantitycontrol">
+                    <span class="quantitybutton" onclick="decreaseQuantity(1)">-</span>
+                    <input class="quantitytext" type="text" id="quantity" value="1" readonly>
+                    <span class="quantitybutton" onclick="increaseQuantity(1)">+</span><br>
                 </div>
-
-                <div class="item_text">
-                    <p>【Rivon禮坊】法式奶油雪茄捲20入(黑森林摩卡)</p>
-
-                </div>
-                <div class="item_price">
-                    <p>NT$550</p>
-
-                </div>
-
-            </div>
-        
-
-        
-            <div class="item">
-                <div class="item_img">
-                    <img src="assets/image/lovebox.png" alt=""></img>
-                </div>
-
-                <div class="item_text">
-                    <p>【Rivon禮坊】華獻珍愛</p>
-
-                </div>
-                <div class="item_price">
-                    <p>NT$1580</p>
-
-                </div>
-
-            </div>
-        
-            <div class="item">
-                <div class="item_img">
-                    <img src="assets/image/teabox.png" alt=""></img>
-                </div>
-
-                <div class="item_text">
-                    <p>【2024禮坊春節】欣欣向龍午茶禮盒（大）
-                    </p>
-
-                </div>
-                <div class="item_price">
-                    <p>NT$493</p>
-
-                </div>
-
+                <p class="stocktext">庫存: <span id="stock">100</span></p>
+                <button class="button2" onclick="addToCart()">加入購物車</button>
             </div>
         </div>
+    <hr class="hr1">
     </main>
+    <div class="text">
+        <p>※鳳梨酥、鳳梅酥：內容量各12g/包、8包/盒</p>
+        <p>※第一層：花千層-花椒、黑巧酥紅豆白巧、日本香柚佐文山包種茶蛋糕、綜合堅果塔、花千層-咖啡、黑巧酥芝麻白巧、玫瑰荔枝佐西班牙白酒蛋糕</p>
+        <p>※第二層：京饌玉露酥、冰沙餡餅、鳳梨椰果酥、芝核香蛋酥、經典蛋黃酥-烏沙、(花千層-草莓、鳳梨肉絲堅果塔、綠豆椪)</p>
+        <p>※本禮盒產品含過敏原物質為含麩質之穀物、牛奶、蛋、大豆、堅果類、亞硫酸鹽類、芝麻及其製品。</p>
+        <p>※本禮盒產品生產製程廠房，其生產設備有處理芒果、花生及其製品。</p>
+    </div>
+    <hr class="hr1">
+    <div class="comment">
+        <div class="commenttitle">-----COMMENT-----</div><br><br>
+        <div class="oldcomment">
+            <span class="oc-name">小番茄</span>
+            <span class="oc-rating">★★★★★</span><br><br>
+            <span class="oc-text">這超好吃我超級愛!</span>
+        </div>
+        <hr class="hr2">
+        <div class="oldcomment">
+            <span class="oc-name">番茄醬</span>
+            <span class="oc-rating">★★★★★</span><br><br>
+            <span class="oc-text">好愛超愛好讚超讚!</span>
+        </div>
+        <hr class="hr2">
+        <div class="newcomment">
+            <div class="name">
+                <div class="commenttext">username:</div>
+                <input type="text" id="username">
+            </div>
+            <div class="rating" data-rating="0">
+                <div class="commenttext">rating:</div>
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <div class="usercomment">
+                <div class="commenttext">comment:</div>
+                <textarea name="comment" cols="47" rows="6"></textarea>
+            </div>
+            <input class="sendbutton" type="submit" value="SEND">
+        </div>
+    </div>
     <footer >
         <div class="line1">
             <a class="footer1" href="index.html">首頁</a>
@@ -317,5 +276,8 @@
         <div class="footertext">Copyright@伱</div>  
         <div class="footertext">地址:桃園市中壢區新中北路200號</div>
     </footer>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/foryou.js"></script>
+    
 </body>
 </html>
