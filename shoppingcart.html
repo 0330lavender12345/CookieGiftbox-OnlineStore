@@ -170,7 +170,7 @@
     </header>
     <script src="js/login.js"></script>
 
-    <main>
+    <div class="main">
         <div class="shoppingcart-title">-----SHOPPING CART-----</div>
         <div class="cart-item">
             <div class="cartitemtext">
@@ -184,6 +184,7 @@
                     <span class="quantitybutton2" onclick="increaseQuantity(1)">+</span><br>
                 </div>
                 <h5>$ <span id="total1">575</span> </h5><br>
+                <img src="image/remove.png" alt="remove">
                 
             </div>
         </div>
@@ -199,7 +200,28 @@
                     <span class="quantitybutton2" onclick="increaseQuantity(2)">+</span><br>
                 </div>
                 <h5>$ <span id="total2">320</span> </h5><br>
+                <img src="image/remove.png" alt="remove">
                 
+            </div>
+        </div>
+        <div class="method">
+            <div class="payment">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>付款方式</legend>
+                        <input type="radio" name="pay" value="COD" checked>貨到付款
+                        <input type="radio" name="pay" value="cash">線上刷卡
+                    </fieldset>
+                </form>
+            </div>
+            <div class="delivery">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>運送方式</legend>
+                        <input type="radio" name="delivery" value="converience" checked>超商
+                        <input type="radio" name="delivery" value="home">宅配
+                    </fieldset>
+                </form>
             </div>
         </div>
         <div class="cart-item1">
@@ -214,7 +236,33 @@
             </div>
         </div>
         
-    </main>
+    </div>
+    <footer >
+        <div class="line1">
+            <a class="footer1" href="">首頁</a>
+            <a class="footer1" href="">About us</a>
+            <a class="footer1" href="">會員資料</a>
+            <a class="footer1" href="">常見問題</a>
+        </div>
+        <hr class="hr3">
+        <div class="line2">
+            <a class="footer1" href="">郭元益</a>
+            <a class="footer1" href="https://shop.kuos.com/" target="_blank"><img class="linkicon" src="image/linkicon.png" alt="link"></a>
+            <a class="footer1" href="">六月初一</a>
+            <a class="footer1" href="https://www.june1.com.tw/" target="_blank"><img class="linkicon" src="image/linkicon.png" alt="link"></a>
+            <a class="footer1" href="">禮坊</a>
+            <a class="footer1" href="https://www.rivon.com.tw/" target="_blank"><img class="linkicon" src="image/linkicon.png" alt="link"></a>
+        </div>
+        <hr class="hr3">
+        <br>
+        <div class="footertext">瀏覽人數： </div>
+        <div class="footertext">MON-FRI 8:00-17:00</div>
+        <div class="footertext">EST.2023|伱NI</div>
+        <div class="footertext">Copyright@伱</div>  
+        <div class="footertext">地址:桃園市中壢區新中北路200號</div>
+    </footer>
+
+    <script src="js/product.js"></script> 
     <script src="js/shoppingcart.js"></script>
 </body>
 </html>

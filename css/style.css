@@ -7,47 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-/*
-#cartContainer {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    /* 初始位置在屏幕右侧之外 */
-/*    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease;
-    添加过渡效果 */
-/*
-    z-index: 1;
-    height: 100vh;
-    視窗高度的100% 
-    overflow-y: scroll;
-    啟用垂直滾動條 
-}
-
-#cart {
-    padding: 20px;
-}
-
-#cartItems {
-    list-style: none;
-    padding: 0;
-}
-
-#closeCartBtn {
-    background-color: #003049;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#closeCartBtn:hover {
-    background-color: #001c30;
-}
-*/
 .mainplace {
     display: flex;
     justify-content: space-around;
@@ -261,7 +220,6 @@ textarea {
 }
 
 footer {
-
     color: white;
     background-color: #003049;
     padding: 5px;
