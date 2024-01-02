@@ -216,15 +216,27 @@ body {
 
 }
 
+.item_text1 a {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: inherit;
+}
+
 .item_text2 {
     position: absolute;
     cursor: pointer;
     margin-top: -9px;
-    margin-left: 110px;
+    margin-left: 75px;
     font-weight: 700;
     font-size: 18px;
     color: #003049;
     font-family: 'Noto Serif TC', serif;
+}
+
+.item_text2 a {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: inherit;
 }
 
 .item_price1 {
