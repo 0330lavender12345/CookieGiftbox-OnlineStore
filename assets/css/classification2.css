@@ -186,3 +186,10 @@ body {
     bottom: 10px;
     font-size: 20px;
 }
+
+.item_text a {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: inherit;
+    /* 使用父元素的文字顏色 */
+}

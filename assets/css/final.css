@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.shoppingblock-title {
+    color: #003049;
+    margin: 27px 0;
+    padding: 46px 0 0 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.shoppingblock2,
+.shoppingblock3 {
+    background-color: #E0E1DD;
+    border-radius: 7px;
+    margin: 10px 195px 20px 195px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shoppingblock2 img,
+.shoppingblock3 img {
+    width: 200px;
+    padding: 10px 130px 10px 80px;
+}
+
+.shoppingblock2 p,
+.shoppingblock3 p {
+    font-size: 20px;
+}
+
+.backtohome {
+    font-size: 22.5px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #003049;
+    color: white;
+    margin: 20px 717px;
+    border-radius: 5px;
+}

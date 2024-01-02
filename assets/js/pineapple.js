@@ -1,5 +1,5 @@
 let currentIndex = 0;  // 初始化当前索引
-        const images = ["assets/image/pineapple1.jpg", "assets/image/pineapple3.jpg", "assets/image/pineapple2.jpg"];  // 替换为你的图片路径
+        const images = ["assets/image/pineapple1.jpg", "assets/image/pineapple2.jpg", "assets/image/pineapple3.jpg"];  // 替换为你的图片路径
         
         function changeSlideTo(index) {
             currentIndex = index;
