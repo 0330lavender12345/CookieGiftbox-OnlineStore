@@ -13,6 +13,7 @@ body {
     top: -110px;
 }
 
+
 .memnav {
     position: relative;
     background: #34495e;
@@ -224,6 +225,57 @@ a:nth-child(1):hover~.memberani {
     white-space: nowrap;
 }
 
+
+
+/**/
+.cartitemtext1 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartitemtext1 img {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 35px;
+    right: -160px;
+
+}
+
+.snooopy {
+    position: absolute;
+    font-size: 18px;
+    white-space: nowrap;
+    left: 180px;
+    top: 40px;
+}
+
+.cartitemquantityy {
+    position: absolute;
+    left: 180px;
+    top: 80px;
+    font-size: 18px;
+}
+
+
+#totall1 {
+    font-size: 18px;
+}
+
+.cart-item1 {
+    position: absolute;
+    background-color: #E0E1DD;
+    border-radius: 5px;
+    align-items: center;
+    right: 30px;
+    top: 27px;
+    width: 500px;
+    height: 400px;
+}
+
+/*footer*/
 footer {
     margin-top: 600px;
 }

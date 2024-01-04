@@ -149,7 +149,6 @@ body {
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 比例的容器 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -218,7 +217,7 @@ body {
 
 .item_text1 a {
     text-decoration: none;
-    /* 移除下劃線 */
+
     color: inherit;
 }
 
@@ -235,7 +234,7 @@ body {
 
 .item_text2 a {
     text-decoration: none;
-    /* 移除下劃線 */
+
     color: inherit;
 }
 
@@ -286,7 +285,7 @@ ul li a {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     letter-spacing: 2px;
     white-space: nowrap;
-    /* 添加這行 */
+
 }
 
 
@@ -351,9 +350,9 @@ ul li a:hover::before {
 
 .hidden1 {
     opacity: 0;
-    /* 圖片初始化為隱藏狀態 */
+
     transform: translateX(120%);
-    /* 設置圖片初始位置在右側之外 */
+
 }
 
 .giftimg img {

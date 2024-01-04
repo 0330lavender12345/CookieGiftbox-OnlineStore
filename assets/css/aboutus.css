@@ -1,13 +1,7 @@
 body {
-    /*position: relative;*/
     background-color: #E0E1DD;
-    /*width: 100%;
-    overflow-x: hidden;*/
     margin: 0;
 }
-
-
-
 
 section {
     position: relative;
@@ -18,12 +12,7 @@ section {
     width: 100%;
     height: auto;
     min-height: calc(100vh - 75px);
-    /* 根據需要調整高度 */
-    /*margin-top: 75px;*/
-    /* 固定標頭的高度 */
     padding-bottom: 50px;
-    /* 若需要額外的底部間距 */
-
 }
 
 .imgbox img {
@@ -72,9 +61,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-
-
 }
 
 .container .about .introduce {
@@ -183,7 +169,6 @@ section {
     right: 105px;
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
-    /* 調整底線粗細 */
     text-underline-offset: 6px;
 }
 
@@ -245,4 +230,9 @@ section {
     left: 2px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.feedback,
+.reflection {
+    overflow: auto;
 }

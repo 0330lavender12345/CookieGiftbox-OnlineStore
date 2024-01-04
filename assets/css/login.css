@@ -27,7 +27,6 @@
     position: absolute;
     height: 440px;
     width: 400px;
-    /*background: transparent;*/
     background: rgba(255, 255, 255, 0.32);
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -42,11 +41,12 @@
     z-index: 1500;
     margin-top: 5%;
     margin-left: 38%;
+    margin-top: 18px;
 
 }
 
 .logincontainer.active {
-    height: 520px;
+    height: 600px;
 }
 
 .logincontainer.active-pop {
@@ -77,6 +77,8 @@
     width: 15px;
     height: 15px;
 }
+
+
 
 .input-box label {
     position: absolute;
@@ -115,19 +117,7 @@
     top: -5px;
 }
 
-.remember-forgot {
-    font-size: .9em;
-    color: #5e503f;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
 
-.remember-forgot label input {
-    accent-color: #5e503f;
-    margin-right: 3px;
-}
 
 .btn {
     height: 42px;

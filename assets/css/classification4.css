@@ -33,12 +33,12 @@ body {
 @keyframes floatAnimation {
     from {
         transform: translateY(0);
-        /* 開始時的位置 */
+
     }
 
     to {
         transform: translateY(-10px);
-        /* 結束時的位置，這裡可以調整負值的大小以改變漂浮效果 */
+
     }
 }
 
@@ -66,13 +66,11 @@ body {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    /* 添加过渡效果 */
 
 }
 
 .item_img img:hover {
     transform: translateY(-10px);
-    /* 当鼠标悬停时向上移动10像素 */
 }
 
 
