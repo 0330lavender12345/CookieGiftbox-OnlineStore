@@ -256,3 +256,16 @@ footer {
 .footertext {
     text-align: center;
 }
+
+.simple-rating i {
+    color: #f5ba00;
+    display: inline-block;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+
+.ratingtext {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}

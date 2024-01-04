@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Great+Vibes&family=Italianno&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
     
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
 </head>
 <body>
     <header>
@@ -228,25 +232,26 @@
             <span class="oc-text">好愛超愛好讚超讚!</span>
         </div>
         <hr class="hr2">
-        <div class="newcomment">
-            <div class="name">
-                <div class="commenttext">username:</div>
-                <input type="text" id="username">
-            </div>
-            <div class="rating" data-rating="0">
-                <div class="commenttext">rating:</div>
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
+        <form action="newBoard.jsp" class="newcomment">
+
+            <div class="ratingtext">
+                rating:
+                <div id="jquery-script-menu">
+                    <div class="jquery-script-center"></div>
+                    <div class="jquery-script-clear"></div>
+                </div>
+                <div class="container">
+                    <p>
+                        <input class="rating">
+                    </p>
+                </div>
             </div>
             <div class="usercomment">
                 <div class="commenttext">comment:</div>
-                <textarea name="comment" cols="47" rows="6"></textarea>
+                <textarea style="resize: none;" name="comment" cols="47" rows="6"></textarea>
             </div>
             <input class="sendbutton" type="submit" value="SEND">
-        </div>
+        </form>
     </div>
     <footer >
         <div class="line1">
@@ -272,6 +277,14 @@
         <div class="footertext">Copyright@伱</div>  
         <div class="footertext">地址:桃園市中壢區新中北路200號</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/rating.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.rating').rating();
+      });
+    </script>
+
     <script src="js/butter.js"></script>
     <script src="js/product.js"></script>
 </body>

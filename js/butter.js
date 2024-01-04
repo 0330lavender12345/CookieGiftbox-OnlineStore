@@ -35,3 +35,6 @@ let currentIndex = 0;  // 初始化当前索引
                 changeSlide(1);
             });
         });
+
+//
+        
