@@ -1,5 +1,5 @@
-let currentIndex = 0;  // 初始化当前索引
-        const images = ["assets/image/dragon1.png", "assets/image/dragon2.png", "assets/image/dragon3.png"];  // 替换为你的图片路径
+let currentIndex = 0;  
+        const images = ["assets/image/dragon1.png", "assets/image/dragon2.png", "assets/image/dragon3.png"];  
         
         function changeSlideTo(index) {
             currentIndex = index;
@@ -8,7 +8,7 @@ let currentIndex = 0;  // 初始化当前索引
         function changeSlide(direction) {
             currentIndex += direction;
         
-            // 处理循环切换图片，如果 currentIndex 超出边界
+           
             if (currentIndex < 0) {
                 currentIndex = images.length - 1;
             } else if (currentIndex >= images.length) {

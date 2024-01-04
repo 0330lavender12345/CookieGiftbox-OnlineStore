@@ -153,13 +153,11 @@ body {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    /* 添加过渡效果 */
 
 }
 
 .item_img img:hover {
     transform: translateY(-10px);
-    /* 当鼠标悬停时向上移动10像素 */
 }
 
 
@@ -189,7 +187,5 @@ body {
 
 .item_text a {
     text-decoration: none;
-    /* 移除下劃線 */
     color: inherit;
-    /* 使用父元素的文字顏色 */
 }
