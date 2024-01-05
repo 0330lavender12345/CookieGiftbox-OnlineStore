@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #E0E1DD;
+}
+
+.su-success {
+
+    margin-top: 170px;
+}
+
+.su-successtext {
+    font-size: 75px;
+    font-weight: bolder;
+    text-align: center;
+    color: #003049;
+}
+
+.backtohome {
+    font-size: 22.5px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #003049;
+    color: white;
+    margin: 20px 700px;
+    border-radius: 5px;
+}

@@ -23,6 +23,7 @@
     color: #ab947e;
 }
 
+/*login 區塊*/
 .logincontainer {
     position: absolute;
     height: 440px;
@@ -39,7 +40,6 @@
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
     z-index: 1500;
-    margin-top: 5%;
     margin-left: 38%;
     margin-top: 18px;
 
@@ -77,8 +77,6 @@
     width: 15px;
     height: 15px;
 }
-
-
 
 .input-box label {
     position: absolute;
