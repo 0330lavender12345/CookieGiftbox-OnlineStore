@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>伱NI|【Rivon禮坊】華獻珍愛</title>
-    <link rel="stylesheet" href="assets/css/product.css">
+    <title>伱NI|結帳明細</title>
     <link rel="stylesheet" href="assets/css/headerfooter.css">
-    <link rel="stylesheet" href="assets/css/menu1.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/menu1.css">
+    <link rel="stylesheet" href="assets/css/final.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
@@ -16,12 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Great+Vibes&family=Italianno&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
-    
 </head>
-<body class="body2">
+<body>
     <header>
-        
-        <a href="index.html"><div class="nii">
+        <a href="index.html"><div class="nii"> 
             <p class="ni">伱&nbsp;|</p>
             <p class="ni2">Ni</p>
         </div></a>
@@ -85,22 +83,22 @@
             </a>
         </div>
 
-        <!--購物車-->
-        <div>
+         <!--購物車-->
+         <div>
             
             <a href="shoppingcart.html" class="openCartBtn">
                 <img class="shoppingcart" src="assets/image/shoppingcart.png" alt="shoppingcart">
             </a>
             
         </div>
-        
+
         <div class="search">
             <form action="" class="search1">
                 <input type="text" placeholder="search for..." name="que">
                 <button type="submit"><img src="assets/image/search.png"></button>
             </form>
         </div>
-        
+
 
 
         <!--login-->
@@ -177,78 +175,29 @@
     </header>
     <script src="assets/js/login.js"></script>
 
-    <main>
-        <div class="mainplace">
-            <div class="leftplace">
-                <div class="LR-button">
-                    <button class="button1" id="leftbutton" onclick="changeSlide(-1)"><</button>
-                    <img id="sliderImage" src="assets/image/love1.png" alt="photo1">
-                    <button class="button1" id="rightbutton" onclick="changeSlide(1)">></button>
-                </div>
-                <div class="otherphoto">
-                    <img class="thumbnail" src="assets/image/love1.png" alt="photo1" onclick="changeSlideTo(0)">
-                    <img class="thumbnail" src="assets/image/love2.png" alt="photo2" onclick="changeSlideTo(1)">
-                    <img class="thumbnail" src="assets/image/love3.png" alt="photo3" onclick="changeSlideTo(2)">
-                
-                </div>
-            </div>
-            <div class="rightplace">
-                <div class="titlecookie">
-                    <p>【禮坊】<br>
-                        西式風格-華獻珍愛</p>
-                </div>
-                <p class="titletext">歐洲精品設計師操刀<br>
-                    顛覆過往喜餅禮盒設計<br>
-                    打造全新視覺饗宴
+    <div class="shoppingblock1">
+        
+        <div class="shoppingblock-title">-----結帳明細-----</div>
+        <div class="shoppingblock2">
+            <img src="assets/image/SNOOPY1.jpg" alt="SNOOPY1">
+            <p>
+                【SNOOPY聯名】八結肉酥酥禮盒
+                單價：575<br>
+                購買數量：7<br>
+                總金額：4025
                 </p>
-                <div class="pricecookie"><h2>NT:1580</h2></div>
-                
-                <div class="quantitycontrol">
-                    <span class="quantitybutton" onclick="decreaseQuantity()">-</span>
-                    <input class="quantitytext" type="text" id="quantity" value="1" readonly>
-                    <span class="quantitybutton" onclick="increaseQuantity()">+</span><br>
-                </div>
-                <p class="stocktext">庫存: <span id="stock">100</span></p>
-                <button class="button2" onclick="addToCart()">加入購物車</button>
-            </div>
         </div>
-    <hr class="hr1">
-    </main>
-    <div class="text">
-        <p>※部分品項含酒</p>
-        <p>※上層：堅果塞納河、椰子小餅、核果小點、草莓小餅、法式雪茄捲</p>
-        <p>※下層：可可悌娜餅乾罐、法式磅蛋糕、瑪德蓮、費南雪、可可悌娜</p>
-    </div>
-    <hr class="hr1">
-    <div class="comment">
-        <div class="commenttitle">-----COMMENT-----</div><br><br>
-        <div class="oldcomment">
-            <span class="oc-name">雙寶的媽</span>
-            <span class="oc-rating">★★★★★</span><br><br>
-            <span class="oc-text">我結婚就是訂這個禮盒!!現在已經是雙寶媽ㄌ</span>
+        <div class="shoppingblock3">
+            <img src="assets/image/pineapple1.jpg" alt="pineapple1">
+            <p>
+                【精美禮盒組】剛好一口酥禮盒
+                單價：320<br>
+                購買數量：2<br>
+                總金額：640
+                </p>
         </div>
-        <hr class="hr2">
-        <div class="oldcomment">
-            <span class="oc-name">番茄醬🍅</span>
-            <span class="oc-rating">★★★</span><br><br>
-            <span class="oc-text">還不錯，但價格有點高</span>
-        </div>
-        <hr class="hr2">
-        <div class="newcomment">
-            
-            <div class="rating" data-rating="0">
-                <div class="commenttext">rating:</div>
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
-            </div>
-            <div class="usercomment">
-                <div class="commenttext">comment:</div>
-                <textarea style="resize: none;" name="comment" cols="47" rows="6"></textarea>
-            </div>
-            <input class="sendbutton" type="submit" value="SEND">
+        <div class="backtohomebtn">
+            <a href="index.html"><button type="button" class="backtohome">回首頁</button></a>
         </div>
     </div>
     <footer >
@@ -275,8 +224,5 @@
         <div class="footertext">Copyright@伱</div>  
         <div class="footertext">地址:桃園市中壢區新中北路200號</div>
     </footer>
-    <script src="assets/js/love.js"></script>
-    <script src="assets/js/product.js"></script>
-    
 </body>
 </html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳成功</title>
+    <link rel="stylesheet" href="assets/css/headerfooter.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/menu1.css">
+    <link rel="stylesheet" href="assets/css/signupsuccess.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <a target="_blank" href="https://icons8.com/icon/132/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Great+Vibes&family=Italianno&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="successbody">
+    <header>
+        <a href="index.html"><div class="nii"> 
+            <p class="ni">伱&nbsp;|</p>
+            <p class="ni2">Ni</p>
+        </div></a>
+        <!--選單-->
+        <div class="lefts">
+            <div class="menucontain">
+                <div class="menubtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="side-bar">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+            
+                    <div class="menu">
+                        <div class="menulist"><a href="index.html">Home</a></div>
+                        <div class="menulist">
+                            <a class="subbtn">Product<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="submenu">
+                                <a href="classification4.html" class="sublist">All Products</a>
+                                <a href="classification2.html" class="sublist">郭元益</a>
+                                <a href="classification1.html" class="sublist">六月初一</a>
+                                <a href="classification3.html" class="sublist">Rivon</a>
+                            </div>
+                        </div>
+                                    
+                        <div class="menulist"><a href="aboutus.html">About us</a></div>
+                        <div class="menulist"><a href="classification5.html">Questions</a></li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.subbtn').click(function(){
+                $(this).next('.submenu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            $('.menubtn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menubtn').css("visibility", "hidden");
+            });
+
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menubtn').css("visibility", "visible");
+            });
+        });                                 
+
+        </script>
+
+        <div class="user-modal">
+            <a href="data.html">
+                <div class="profile-btn">
+                    <i class="fas fa-user"></i>
+                </div>
+            </a>
+        </div>
+
+         <!--購物車-->
+         <div>
+            
+            <a href="shoppingcart.html" class="openCartBtn">
+                <img class="shoppingcart" src="assets/image/shoppingcart.png" alt="shoppingcart">
+            </a>
+            
+        </div>
+
+        <div class="search">
+            <form action="" class="search1">
+                <input type="text" placeholder="search for..." name="que">
+                <button type="submit"><img src="assets/image/search.png"></button>
+            </form>
+        </div>
+
+
+
+        <!--login-->
+        <div class="rights">
+            <div class="headerright">
+                <button class="loginbtn">Login</button>
+            </div>       
+
+            <div class="logincontainer">
+                <span class="closeicon">
+                    <img src="assets/image/close .png">
+                </span>
+                <div class="formbox login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/mail.png"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/padlock.png"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-signup">
+                            <p>Don't have an account?
+                            <a href="#" class="signlink">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="formbox sign">
+                    <h2>Sign up</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <img src="assets/image/user.png">
+                            </span>
+                            <input type="text" required>
+                            <label>Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/mail.png"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/padlock.png"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="assets/image/telephone.png"></span>
+                            <input type="TEL" required>
+                            <label>TEL</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"></span>
+                            <input type="date" name="selectdate/" placeholder=" ">
+                            <label>Birthday</label>
+                        </div>
+                      
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-signup">
+                            <p>Already have an account?
+                            <a href="#" class="loginlink">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="assets/js/login.js"></script>
+
+    <div class="su-success">
+        <div class="su-successtext">
+            結帳成功!!!
+        </div><br><br><br><br><br>
+        <div class="backtohomebtn">
+            <a href="final.html"><button type="button" class="backtohome">購物明細</button></a>
+        </div>
+    </div>
+    <footer >
+        <div class="line1">
+            <a class="footer1" href="index.html">首頁</a>
+            <a class="footer1" href="aboutus.html">About us</a>
+            <a class="footer1" href="data.html">會員資料</a>
+            <a class="footer1" href="classification5.html">常見問題</a>
+        </div>
+        <hr class="hr3">
+        <div class="line2">
+            <a class="footer1" href="classification2.html">郭元益</a>
+            <a class="footer1" href="https://shop.kuos.com/" target="_blank"><img class="linkicon" src="assets/image/linkicon.png" alt="link"></a>
+            <a class="footer1" href="classification1.html">六月初一</a>
+            <a class="footer1" href="https://www.june1.com.tw/" target="_blank"><img class="linkicon" src="assets/image/linkicon.png" alt="link"></a>
+            <a class="footer1" href="classification3.html">禮坊</a>
+            <a class="footer1" href="https://www.rivon.com.tw/" target="_blank"><img class="linkicon" src="assets/image/linkicon.png" alt="link"></a>
+        </div>
+        <hr class="hr3">
+        <br>
+        <div class="footertext">瀏覽人數： </div>
+        <div class="footertext">MON-FRI 8:00-17:00</div>
+        <div class="footertext">EST.2023|伱NI</div>
+        <div class="footertext">Copyright@伱</div>  
+        <div class="footertext">地址:桃園市中壢區新中北路200號</div>
+    </footer>
+</body>
+</html>
