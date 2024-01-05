@@ -1,0 +1,77 @@
+.body7 {
+    background-color: #E0E1DD;
+    margin: 0;
+}
+
+main1 {
+    margin-top: 100px;
+}
+
+.qah2 {
+    height: 50px;
+    width: auto;
+    color: #172b54;
+    padding: 5px;
+    margin: 30px 180px;
+    display: grid;
+    width: 70%;
+    margin-left: 230px;
+    font-size: 50px;
+    text-align: center;
+    animation: floatAnimation 1s infinite alternate;
+
+
+}
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0);
+
+    }
+
+    to {
+        transform: translateY(-10px);
+
+    }
+}
+
+
+
+.qanda {
+    background-color: #8DA9C4;
+    width: 70%;
+    height: 750px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 15%;
+
+}
+
+
+
+li {
+    list-style: none;
+
+}
+
+.ques {
+    width: 70%;
+    font-size: 36px;
+    /*margin-left: 40px;*/
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.ans {
+    width: 70%;
+    font-size: 20px;
+    /*margin-left: 80px;*/
+    margin-top: 20px;
+    /* padding: 5px;*/
+    text-align: center;
+    margin-left: 15%;
+
+}

@@ -1,0 +1,239 @@
+.body1 {
+    background-color: #E0E1DD;
+    margin: 0;
+}
+
+#aboutsectiob,
+.feedbody {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2a496;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 75px);
+    padding-bottom: 50px;
+}
+
+.imgbox img {
+    width: 170px;
+    height: 160px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about {
+    width: 90px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+}
+
+.container .about {
+    position: relative;
+    width: 350px;
+    height: 430px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .about .introduce {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.6s;
+}
+
+.container .about:hover .introduce {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.container .about .introduce .imgbox {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container .about .introduce .imgbox img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.container .about .introduce .contentbx p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .about .introduce .contentbx p span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container .about .back {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    left: 90px;
+}
+
+.about:hover .card-body {
+    right: 0;
+
+}
+
+.container .about .back li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+
+}
+
+.container .about:hover .back li {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.container .about .back li a {
+    color: #fff;
+    font-size: 24px;
+
+}
+
+/*心得*/
+.feedbody {
+    margin-top: -80px;
+}
+
+.feedback1 {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    margin-top: -80px;
+
+}
+
+.front1 {
+    position: absolute;
+    font-size: 35px;
+    color: #003049;
+    top: -10px;
+    font-weight: 500;
+    right: 105px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 6px;
+}
+
+
+.feedback {
+    position: absolute;
+    width: 300px;
+    height: 390px;
+    margin-left: -55px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+
+
+}
+
+#next,
+#prev {
+    position: absolute;
+    top: 40%;
+    color: #5e503f;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-weight: bold;
+    left: 300px;
+
+}
+
+#next {
+    left: unset;
+    right: 300px;
+
+}
+
+.feedtitle {
+    color: #003049;
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+.membername {
+    position: absolute;
+    color: #003049;
+    font-size: 25px;
+    font-weight: bold;
+    top: 70px;
+}
+
+.reflection {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    top: 130px;
+    left: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.feedback,
+.reflection {
+    overflow: auto;
+}

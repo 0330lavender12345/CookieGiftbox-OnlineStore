@@ -1,4 +1,4 @@
-body {
+.shoppingbody {
     display: flex;
     flex-direction: column;
 }
@@ -6,9 +6,18 @@ body {
 .shoppingcart-title {
     text-align: center;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 28px;
     color: #003049;
     margin: 27px 0;
+    padding: 17px 0 0 0;
+}
+
+.payment fieldset {
+    border: none;
+}
+
+.delivery fieldset {
+    border: none;
 }
 
 .cart-item {
@@ -20,6 +29,14 @@ body {
     align-items: center;
 }
 
+.payment,
+.delivery {
+    font-size: 18px;
+    margin-right: 300px;
+    color: #003049;
+
+}
+
 .cartitemtext {
     display: flex;
     justify-content: flex-start;
@@ -28,7 +45,7 @@ body {
 
 .cartitemtext img {
     width: 170px;
-    margin: 10px 80px 10px 10px;
+    margin: 10px 100px 10px 10px;
     cursor: pointer;
 }
 
@@ -42,8 +59,21 @@ body {
     color: white;
     border-radius: 3px;
     margin: 0 5px;
+    padding: 0 7px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.quantitybutton3 {
+    background-color: #003049;
+    color: white;
+    border-radius: 3px;
+    margin: 0 5px;
     padding: 0 5px;
     font-size: 20px;
+    font-weight: bolder;
+
 }
 
 .quantitytext2 {
@@ -62,7 +92,7 @@ body {
 
 .cart-item1 {
     background-color: #E0E1DD;
-    margin: 10px 195px 10px 195px;
+    margin: 10px 195px 35px 195px;
     border-radius: 5px;
     padding: 30px;
     display: flex;
@@ -78,11 +108,14 @@ body {
 
 .totalpricetext {
     display: inline;
+    font-size: 27px;
 }
 
 .totalprice {
     text-align: center;
-
+    font-size: 28px;
+    display: flex;
+    align-items: center;
 }
 
 .checkout {
@@ -90,5 +123,17 @@ body {
     background-color: #003049;
     color: white;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 21px;
+}
+
+.cartitemquantity img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 350px;
+    margin-top: 34px;
 }

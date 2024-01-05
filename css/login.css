@@ -1,0 +1,196 @@
+/*login按鈕*/
+.loginbtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid #f4f3ee;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    right: 20px
+}
+
+.loginbtn:hover {
+    background-color: #f4f3ee;
+    color: #ab947e;
+}
+
+.logincontainer {
+    position: absolute;
+    height: 440px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.32);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1500;
+    margin-top: 5%;
+    margin-left: 38%;
+    margin-top: 18px;
+
+}
+
+.logincontainer.active {
+    height: 600px;
+}
+
+.logincontainer.active-pop {
+    transform: scale(1);
+}
+
+.formbox .login {
+    width: 100%;
+    padding: 40px;
+}
+
+.formbox h2 {
+    font-size: 2em;
+    color: #5e503f;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #5e503f;
+    margin: 30px 0;
+
+}
+
+.icon img {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    transform: translateY(-50%);
+    color: #5e503f;
+    pointer-events: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #5e503f;
+    font-size: 1.2em;
+    padding: 0 35px 0 5px;
+    font-weight: 600;
+}
+
+.input-box .icon {
+    position: absolute;
+    font-size: 1.2em;
+    right: 8px;
+    line-height: 56px;
+    color: #5e503f;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+
+.btn {
+    height: 42px;
+    width: 100%;
+    background: #a9927d;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+.login-signup {
+    color: #5e503f;
+    font-size: .94em;
+    margin: 23px 0 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.login-signup p a {
+    text-decoration: none;
+    font-weight: 580;
+    color: #5e503f;
+}
+
+.login-signup p a:hover {
+    text-decoration: underline;
+}
+
+.logincontainer .closeicon {
+    background: #5e503f;
+    border-bottom-left-radius: 18px;
+    top: 0;
+    right: 0;
+    width: 43px;
+    height: 43px;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.closeicon img {
+    width: 20px;
+    height: 20px;
+}
+
+.logincontainer .formbox.login {
+    transform: translateX(0);
+    transition: transform .18s ease;
+}
+
+.logincontainer.active .formbox.login {
+    transition: none;
+    transform: translateX(-350px);
+}
+
+.logincontainer .formbox.sign {
+    position: absolute;
+    transition: none;
+    transform: translateX(350px);
+}
+
+.logincontainer.active .formbox.sign {
+    transform: translateX(0);
+    transition: transform .18s ease;
+}
