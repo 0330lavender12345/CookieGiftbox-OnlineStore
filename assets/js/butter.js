@@ -1,5 +1,5 @@
 let currentIndex = 0;  
-        const images = ["image/butter1.jpg", "image/butter3.jpg", "image/butter2.png"];  
+        const images = ["assets/image/butter1.jpg", "assets/image/butter2.png", "assets/image/butter3.jpg"];  
         
         function changeSlideTo(index) {
             currentIndex = index;
